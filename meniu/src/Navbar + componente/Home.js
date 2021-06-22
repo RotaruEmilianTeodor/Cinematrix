@@ -35,7 +35,7 @@ const Home = () => {
             <Navbar></Navbar>
             <header style = {{marginTop: 70, height: 76}}>
             <h3 className = 'textRecomandari' style = {{marginLeft: 55}}>Pagina principala</h3>
-            <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="Molly Haskell" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"There are two cinemas: the films we have actually seen and the memories we have of them 2" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
+            <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="Molly Haskell" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"There are two cinemas: the films we have actually seen and the memories we have of them" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
             <article className = 'articleUtilizator'>
                 <h1 className = 'h1Utilizator'>{localStorage.getItem('user') ? <p>{userJSONParsed.nume}</p> : <p style = {{fontFamily: 'Poppins'}}>Esti in modul <b>trecator</b></p>}</h1>
             </article>
