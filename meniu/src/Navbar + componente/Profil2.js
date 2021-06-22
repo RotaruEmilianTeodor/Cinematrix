@@ -12,7 +12,7 @@ const Profil2 = () => {
                     <img style = {{width: '300px', height: '70px', marginBottom: '10px'}} src = {LogoCinematrix} alt="" />
                     <p style = {{fontFamily: 'Poppins', fontSize: '16px', color: 'black'}}>Bine te-am regasit! <BiHappyBeaming style = {{width: '20px', height: '20px', marginTop: '-2px'}}></BiHappyBeaming></p>
                     <div style = {{marginTop: '-8px'}} className = 'about-section-3'>
-                        <p style = {{fontFamily: 'Poppins', fontSize: '14px'}}>Dorim sa iti reamintim ca esti in modul <b style = {{color: 'black'}}>trecator</b> <br /> si ca actiunile tale vor fi limitate.</p>
+                        <p style = {{fontFamily: 'Poppins', fontSize: '14px'}}>Dorim sa iti reamintim ca esti in modul <b style = {{color: 'black'}}>TRECATOR</b> <br /> si ca actiunile tale vor fi limitate.</p>
                         <p style = {{fontFamily: 'Poppins', fontSize: '14px', marginTop: '-12px', marginBottom: '0px'}}>Nu uita ca poti oricand sa te inregistrezi!</p>
                         <p style = {{fontFamily: 'Poppins', fontSize: '14px', marginBottom: '0px'}}>Daca ai nevoie de ajutor, nu uita de pagina <br></br> specifica <b style = {{color: 'yellow'}}>AJUTOR</b>.</p>
                     </div>
