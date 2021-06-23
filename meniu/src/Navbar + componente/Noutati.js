@@ -14,7 +14,7 @@ const Noutati = () => {
                 <Navbar></Navbar>
                 <header style = {{marginTop: 70, height: 76}}>
                 <h3 className = 'textRecomandari' style = {{marginLeft: 55, overflow: 'hidden'}}>Noutati</h3>
-                <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="David Lynch" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"(about cinema) It's like opening a door and go into a new world." <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
+                <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="David Lynch" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique', fontSize: '1vw'}}>"(about cinema) It's like opening a door and go into a new world." <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
                 </header>
 
                 <div style = {{backgroundColor: '#22254b', paddingBottom: '1px', paddingTop: '20px', overflow: 'hidden'}}>

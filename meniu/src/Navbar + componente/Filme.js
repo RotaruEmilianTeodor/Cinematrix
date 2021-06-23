@@ -145,9 +145,9 @@ function Filme() {
     <>
       <Navbar></Navbar>
       <header style = {{marginTop: 70}}>
-        <h5 className = 'textFilme'>FILME</h5>
+        <h5 style = {{fontSize: '1.4vw'}} className = 'textFilme'>FILME</h5>
         <h3 className = 'textRecomandari'>Recomandarile saptamanii</h3>
-        <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="Conrad Hall" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"Cinematography is infinite in its possibilities... much more so than music or language" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
+        <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="Conrad Hall" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique', fontSize: '1vw'}}>"Cinematography is infinite in its possibilities... much more so than music or language" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
         <form onSubmit={handleOnSubmit}>
           <input 
             className="search" 

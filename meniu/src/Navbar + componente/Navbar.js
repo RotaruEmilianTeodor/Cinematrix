@@ -29,7 +29,18 @@ const Navbar = () => {
         <nav className = 'navbar fixed-top navbar-dark bg-primary navbar-expand-lg'>
             <Link to = '/home' className = 'navbar-brand' style = {{fontSize: '30px', fontWeight: 'bold' }}><img style = {{width: '200px', height: '40px', marginTop: '-8px'}} src = {LogoCinematrixAlb} alt="" /></Link>
             <h5 style = {{color: 'white', fontWeight: 'lighter', marginTop: 8, marginLeft: 5, marginRight: 15}}>Pentru cinefilul din tine</h5>
-            <div className = 'collpase navbar-collapse'>
+            <button
+                className = 'navbar-toggler'
+                type = 'button'
+                data-bs-toggle = 'collapse'
+                data-bs-target = '#toggleMenu'
+                aria-controls = 'toggleMenu'
+                aria-expanded = 'true'
+                aria-label = 'Toggle navigation'
+            >
+                <span className = 'navbar-toggler-icon'></span>
+            </button>
+            <div className = 'collpase navbar-collapse' id = 'toggleMenu'>
                 <ul style = {{marginTop: 5}} className = 'navbar-nav mr-auto'>
                     <li className = 'navbar-item'>
                         <Link to = '/home' className = 'nav-link' style = {{color: 'black'}}>HOME <AiOutlineHome style = {{marginLeft: '-2px', marginTop: '-3px', width: '18px', height: '18px'}}></AiOutlineHome></Link>
