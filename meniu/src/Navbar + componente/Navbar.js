@@ -22,7 +22,6 @@ const Navbar = () => {
     const DeleteFromLocalStorage = () => {
         localStorage.removeItem('jwt')
         localStorage.removeItem('user')
-        // localStorage.removeItem('ratingValue')
     }
 
     return (
@@ -66,7 +65,7 @@ const Navbar = () => {
                     <li>
                         <Link to = '/contact' className = 'nav-link' style = {{color: 'black', fontWeight: 'lighter'}}>Contact</Link>
                     </li>
-                    <FcRules onClick = {openNav} style = {{width: '25px', height: '25px', marginTop: '8px', marginLeft: '10px', cursor: 'pointer'}}></FcRules>
+                    <FcRules className = 'rulesIcon' onClick = {openNav} style = {{width: '25px', height: '25px', marginTop: '8px', marginLeft: '10px', cursor: 'pointer'}}></FcRules>
                     <h2 style = {{marginLeft: '10px', marginTop: '-4px', color: 'white', fontWeight: 'lighter'}}>|</h2>
                     <li>
                         <Link to = '/ajutor' className = 'nav-link' class="btn btn-outline-warning" style = {{marginLeft: '20px'}}>Ajutor <VscInfo style = {{width: '20px', height: '20px', marginTop: '-2px'}}></VscInfo></Link>

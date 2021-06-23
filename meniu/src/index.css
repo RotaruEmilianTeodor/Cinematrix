@@ -11,6 +11,24 @@
   }
 }
 
+@media screen and (max-width: 1535px) {
+  .divLogout {
+      display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .articleUtilizator {
+      display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .rulesIcon {
+      display: none !important;
+  }
+}
+
 body {
   background-color: #22254b;
   color: white;

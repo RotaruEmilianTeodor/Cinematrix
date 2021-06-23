@@ -6,6 +6,11 @@ import LogoCinematrix from "../images/CinematrixLogo.png"
 import { Link } from 'react-router-dom'
  
 const Footer = () => {
+    const DeleteFromLocalStorage = () => {
+        localStorage.removeItem('jwt')
+        localStorage.removeItem('user')
+    }
+
     return (
         <footer style = {{paddingTop: '30px'}}>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -23,11 +28,11 @@ const Footer = () => {
     
             <div style = {{textAlign: 'center', paddingTop: 15, paddingBottom: 15, marginTop: '-10px'}}>
                 <a href="https://www.themoviedb.org/?language=ro" target='_blank'>The Movie Database <SiThemoviedatabase style = {{width: '20px', height: '20px'}}></SiThemoviedatabase></a>
-                <a href="https://www.imdb.com/" target='_blank' style = {{marginLeft: 30}}>IMDB <SiImdb style = {{width: '20px', height: '20px'}}></SiImdb></a>
+                <a href="https://www.imdb.com/" target='_blank' style = {{marginLeft: 30}}>IMDB <SiImdb style = {{width: '20px', height: '20px', marginTop: '-3px'}}></SiImdb></a>
                 <a href="https://www.cinemagia.ro/" target='_blank' style = {{marginLeft: 30}}>Cinemagia</a>
             </div>
 
-            <p style = {{marginTop: '-5px'}}>Nu uita ca poti sa iti vizualizezi pagina de utilizator <Link to = 'profil-mare'>aici</Link></p>
+            <p style = {{marginTop: '-5px'}}><Link to = 'profil-mare'>Pagina de utilizator</Link>&nbsp;&nbsp;<Link onClick = {DeleteFromLocalStorage} to = '/'>LOGOUT</Link></p>
             
             <div style = {{backgroundColor: '#373b69', paddingTop: 20, paddingBottom: 20}}>
                 <img style = {{width: '150px', height: '30px', marginTop: '-3px'}} src = {LogoCinematrix} alt="" /> © 2021 by Rotaru Emilian-Teodor. <b>All rights reserved</b> <a href="https://www.termsfeed.com/blog/sample-copyright-notices/" target = "_blank"><IoHandRightSharp style = {{marginTop: '-4px', color: 'black'}}></IoHandRightSharp></a>
