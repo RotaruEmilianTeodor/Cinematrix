@@ -19,7 +19,7 @@ const Recomandari = () => {
             <h3 className = 'textRecomandari' style = {{marginLeft: 55}}>Recomandari</h3>
             <Link to = '/recomandari-filme' style = {{float: 'left', marginLeft: '30px', marginTop: '13px'}}>Filme</Link>
             <Link to = '/recomandari-seriale' style = {{float: 'left', marginLeft: '15px', marginTop: '13px'}}>Seriale</Link>
-            <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="Rachel Morrison" style = {{float: 'left', marginLeft: 50, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"Life is unpredictable, and I feel, to some extent, lighting and cinematography should be a reflection of that" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
+            <h6 className = 'quotes' data-bs-toggle="tooltip" data-bs-placement="top" title="Rachel Morrison" style = {{float: 'left', marginLeft: 50, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"Life is unpredictable, and I feel, to some extent, lighting and cinematography should be a reflection of that" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
             </header>
 
             <div className="movie-page">

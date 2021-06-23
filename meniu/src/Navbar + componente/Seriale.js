@@ -129,7 +129,7 @@ function Seriale() {
       <header style = {{marginTop: 70}}>
         <h5 className = 'textFilme'>SERIALE</h5>
         <h3 className = 'textRecomandari'>Recomandarile saptamanii</h3>
-        <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="Jean-Luc Godard" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"Cinema is the most beautiful fraud in the world" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
+        <h6 className = 'quotes' data-bs-toggle="tooltip" data-bs-placement="top" title="Jean-Luc Godard" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"Cinema is the most beautiful fraud in the world" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
         <form onSubmit={handleOnSubmit}>
           <input 
             className="search" 

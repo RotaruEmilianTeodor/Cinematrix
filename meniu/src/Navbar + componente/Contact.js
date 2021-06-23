@@ -31,7 +31,7 @@ const Contact = () => {
             <Navbar></Navbar>
             <header style = {{marginTop: 70, height: 76}}>
             <h3 className = 'textRecomandari' style = {{marginLeft: 55, overflow: 'hidden'}}>Contact</h3>
-            <h6 data-bs-toggle="tooltip" data-bs-placement="top" title="Slavoj Žižek" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"Cinema is the ultimate pervert art. It doesn't give you what you desire - it tells you how to desire" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
+            <h6 className = 'quotes' data-bs-toggle="tooltip" data-bs-placement="top" title="Slavoj Žižek" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"Cinema is the ultimate pervert art. It doesn't give you what you desire - it tells you how to desire" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
             </header>
 
             <div style = {{backgroundColor: '#22254b', paddingBottom: '1px', paddingTop: '20px', overflow: 'hidden'}}>

@@ -36,7 +36,7 @@ const ActorSerial = ({ name, poster_path, backdrop_path, id }) => {
                 </div>
             </div>
 
-            <Modal className = 'scroll' isOpen = {modalIsOpen} onRequestClose = {() => setmodalIsOpen(false)} style = {{content: {marginTop: '30px', width: '1500px', height: '480px', position: 'absolute', left: '50%', top: '48%', transform: 'translate(-50%, -50%)', backgroundColor: 'rgb(2, 117, 216, 0.5)', color: 'white', border: '1px solid white', overflowX: 'scroll', overflowY: 'hidden'}, overlay: {marginTop: '30px', backgroundImage: `url(${IMG_API + backdrop_path})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}}>
+            <Modal closeTimeoutMS={400} className = 'scroll' isOpen = {modalIsOpen} onRequestClose = {() => setmodalIsOpen(false)} style = {{content: {marginTop: '30px', width: '1500px', height: '480px', position: 'absolute', left: '50%', top: '48%', transform: 'translate(-50%, -50%)', backgroundColor: 'rgb(2, 117, 216, 0.5)', color: 'white', border: '1px solid white', overflowX: 'scroll', overflowY: 'hidden'}, overlay: {marginTop: '30px', backgroundImage: `url(${IMG_API + backdrop_path})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}}>
             <h4 style = {{marginLeft: '10px', marginTop: '5px', fontWeight: 'lighter'}}>Actorii pentru serialul <span style = {{color: 'black'}} className="badge bg-dark text-white">{name}</span></h4>  
             <div className="similarMovies">          
                 {actors.length > 0 ? actors.map(actor => (

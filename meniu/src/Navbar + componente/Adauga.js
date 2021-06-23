@@ -39,10 +39,11 @@ const Adauga = () => {
                 <Link to = '/adauga' class='btn btn-outline-danger' style = {{float: 'left', marginTop: '8px', marginLeft: '20px'}}>+ ADAUGA</Link>
             </header>
             <div style = {{backgroundColor: '#22254b'}} className = 'add-page'>
-                    <div className = 'container'>
+                <h5 style = {{color: 'white', paddingTop: '30px', fontFamily: 'Poppins'}}>Scrie numele unui film</h5>
+                    <div style = {{marginTop: '-50px', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}} className = 'container'>
                         <div className = 'add-content'>
                             <div className = 'input-wrapper'>
-                                <input type="text" placeholder = 'Gaseste o productie' value = {query} onChange = {onChange}/>
+                                <input type="text" value = {query} onChange = {onChange}/>
                             </div>
                         </div>
                     </div>
