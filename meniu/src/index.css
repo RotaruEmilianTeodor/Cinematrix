@@ -577,7 +577,7 @@ footer {
 
 .add-content .input-wrapper input::placeholder {
   color: white;
-  opacity: 20%;
+  opacity: 50%;
 }
 
 .results {
