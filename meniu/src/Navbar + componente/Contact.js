@@ -11,7 +11,11 @@ import { FaReact } from "react-icons/fa"
 import { DiMongodb } from "react-icons/di"
 import { BsBootstrap } from "react-icons/bs"
 import ReactMapGl from 'react-map-gl'
+import mapboxgl from 'mapbox-gl'
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 const Contact = () => {
     const [viewport, setViewPort] = useState({
