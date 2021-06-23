@@ -143,7 +143,7 @@ function Seriale() {
 
       <div className = 'container-butoane'>
         <div style = {{paddingTop: '25px'}} class="btn-group1" role="group" aria-label="Basic checkbox toggle button group">
-          <input type="checkbox" onClick = {getFilmeActiuneSiAventura} class="btn-check1" id="btncheck1" autocomplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeActiuneSiAventura} class="btn-check" id="btncheck1" autocomplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck1">Actiune si Aventura</label>
 
           <input type="checkbox" onClick = {getFilmeAnimatie} class="btn-check" id="btncheck2" autoComplete="off"></input>
