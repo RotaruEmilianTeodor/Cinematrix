@@ -153,11 +153,15 @@ const Ajutor = () => {
                     </div>
                 </div>
             </div>
+            
+            <div style = {{backgroundColor: '#22254b', paddingTop: '40px'}}>
 
-            <div style = {{backgroundColor: '#22254b', paddingTop: '10px', paddingBottom: '10px'}}>
-                <p style = {{color: 'white', marginLeft: '-495px'}}>Pentru a afla <b>termenii si conditiile</b> folosirii site-ului, te invitam sa apesi pe iconita <FcRules style = {{width: '25px', height: '25px', marginTop: '-2px'}}></FcRules> din meniu.</p>
-                <p style = {{color: 'white', marginLeft: '-200px', marginTop: '-10px'}}>In cazul in care doresti sa iesi din cont sau sa revii la pagina de Login, te invitam sa apesi pe butonul de <b>LOGOUT</b> din coltul din dreapta sus.</p>
-                <p style = {{color: 'white', marginLeft: '-568px', marginTop: '-10px', marginBottom: '-10px'}}>Pentru orice alta informatie sau nelamurire iti stam la dispozitie prin meniul <b>CONTACT</b>.</p>
+            </div>
+
+            <div style = {{paddingBottom: '10px'}} className = "about-section-2">
+                <p style = {{fontFamily: 'Poppins'}}>Pentru a afla <b>termenii si conditiile</b> folosirii site-ului, te invitam sa apesi pe iconita <FcRules style = {{width: '25px', height: '25px', marginTop: '-2px'}}></FcRules> din meniu.</p>
+                <p style = {{fontFamily: 'Poppins'}}>In cazul in care doresti sa iesi din cont sau sa revii la pagina de Login, te invitam sa apesi pe butonul de <b>LOGOUT</b> din coltul din dreapta sus.</p>
+                <p style = {{fontFamily: 'Poppins'}}>Pentru orice alta informatie sau nelamurire iti stam la dispozitie prin meniul <b>CONTACT</b>.</p>
             </div>
 
             <ScrollToTop></ScrollToTop>

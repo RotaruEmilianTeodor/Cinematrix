@@ -12,6 +12,12 @@
 }
 
 @media screen and (max-width: 1535px) {
+  .socialButtonBarHidden {
+      display: none !important;
+  }
+}
+
+@media screen and (max-width: 1535px) {
   .divLogout {
       display: none !important;
   }
@@ -25,6 +31,18 @@
 
 @media screen and (max-width: 992px) {
   .rulesIcon {
+      display: none !important;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .card {
+      display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .motoSite {
       display: none !important;
   }
 }
@@ -1528,7 +1546,7 @@ input[type = 'radio'] {
   max-width: 300px;
 }
 
-.card-new-2{
+.card-new-2 {
   flex: 1;
   flex-basis: 300px;
   flex-grow: 0;

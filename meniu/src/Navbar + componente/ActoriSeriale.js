@@ -78,8 +78,12 @@ function ActoriSeriale() {
 
       </div>
 
-      <div style = {{backgroundColor: '#22254b', marginBottom: '-20px', marginLeft: '-780px', color: 'gray', fontFamily: "Poppins", paddingTop: '10px'}}>
-          <p><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> Productiile de pe aceasta pagina provin din sursa The Movie Database</p>
+      <div style = {{backgroundColor: '#22254b', paddingTop: '10px'}}>
+
+      </div>
+
+      <div className = "about-section-2" style = {{paddingTop: '30px', paddingBottom: '20px'}}>
+          <p style = {{fontFamily: 'Poppins'}}><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> Productiile de pe aceasta pagina provin din sursa The Movie Database</p>
       </div>
 
       <Footer></Footer>

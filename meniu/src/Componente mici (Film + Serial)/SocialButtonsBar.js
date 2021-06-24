@@ -2,7 +2,7 @@ import React from 'react'
 
 const SocialButtonsBar = () => {
     return (
-        <div>
+        <div className = 'socialButtonBarHidden'>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div class="icon-bar">
                 <a href="https://www.facebook.com/EmilianTeo/" class="facebook" target='_blank'><i class="fa fa-facebook"></i></a> 

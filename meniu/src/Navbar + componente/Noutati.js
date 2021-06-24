@@ -26,7 +26,7 @@ const Noutati = () => {
                     <section style = {{marginTop: '-50px', marginBottom: '-60px'}} class="hero-section">
                         <div class="card-grid">
                             <a class="card-new" href="https://www.filmnow.ro/stiri/elsa-pataky-plina-de-rani-pe-platoul-de-filmare-al-peliculei-interceptor-cum-s-a-fotografiat-sotia-lui-chris-hemsworth-59344" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1620671159911-1ff7aef02116?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1620671159911-1ff7aef02116?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Vedete</p>
                                     <h3 class="card__heading">ELSA PATAKY, PLINĂ DE RĂNI PE PLATOUL DE FILMARE AL PELICULEI "INTERCEPTOR"</h3>
@@ -34,7 +34,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://www.cinemagia.ro/stiri/iata-care-a-fost-de-fapt-cea-mai-dificila-parte-la-filmarile-serialului-47439/" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/original/pWt1iRuhNpeVDNP2QiUT2C5OiBt.jpg)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/original/pWt1iRuhNpeVDNP2QiUT2C5OiBt.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Seriale TV</p>
                                     <h3 class="card__heading">Cea mai dificilă parte la filmările serialului Downton Abbey</h3>
@@ -42,7 +42,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://upfit.one/ghid-fit-tot-ce-e-nou-pe-netflix-romania-in-mai-2021" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1597575732103-9f6d068cfa9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1597575732103-9f6d068cfa9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Netflix</p>
                                     <h3 class="card__heading">Tot ce e nou pe Netflix România în mai 2021</h3>
@@ -50,7 +50,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://www.impact.ro/noutati-hbo-go-in-2021-ce-filme-noi-ne-asteapta-si-ce-se-intampla-cu-serialele-mult-asteptate-120943.html" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1529798856831-427dfd0a1ab1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1529798856831-427dfd0a1ab1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">HBO GO</p>
                                     <h3 class="card__heading">Noutăți HBO GO în 2021</h3>
@@ -58,7 +58,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://www.filmnow.ro/stiri/lauren-lapkus-din-orange-is-the-new-black-va-deveni-mamica-actrita-a-anuntat-ca-asteapta-primul-copil-59453" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1570657891791-e39a9d185540?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1570657891791-e39a9d185540?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Vedete</p>
                                     <h3 class="card__heading">LAUREN LAPKUS DIN "ORANGE IS THE NEW BLACK VA DEVENI MĂMICĂ</h3>
@@ -66,7 +66,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://www.filmnow.ro/stiri/transformare-spectaculoasa-pentru-actorul-care-l-a-jucat-pe-gregor-in-got-julius-bjornsson-a-slabit-50-de-kilograme-59468" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1572560719854-04f478ba569b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=312&q=80)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://images.unsplash.com/photo-1572560719854-04f478ba569b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=312&q=80)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Seriale TV</p>
                                     <h3 class="card__heading">TRANSFORMARE SPECTACULOASĂ PENTRU ACTORUL CARE L-A JUCAT PE GREGOR ÎN GOT</h3>
@@ -74,7 +74,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://www.filmnow.ro/stiri/trailerul-friends-reunion-a-cuccerit-internetul-cei-sase-prieteni-actori-si-au-emotionat-fanii-cu-legatura-lor-indestructibila-59425" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f496cm9enuEsZkSPzCwnTESEK5s.jpg)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f496cm9enuEsZkSPzCwnTESEK5s.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Seriale TV</p>
                                     <h3 class="card__heading">TRAILERUL "FRIENDS: REUNION" A CUCERIT INTERNETUL!</h3>
@@ -82,7 +82,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://www.filmnow.ro/stiri/trailer-exploziv-pentru-the-hitmans-wifes-bodyguard-ryan-reynolds-samuel-l-jackson-si-salma-hayek-contra-lui-antonio-banderas-59200" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/original/2IQKMJRyismZkFRcrdvFhmvTfyx.jpg)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/original/2IQKMJRyismZkFRcrdvFhmvTfyx.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Film</p>
                                     <h3 class="card__heading">TRAILER EXPLOZIV PENTRU „THE HITMAN'S WIFE'S BODYGUARD”</h3>
@@ -179,7 +179,7 @@ const Noutati = () => {
                 <h1 style = {{color: 'white', fontFamily: 'Poppins', fontSize: '35px', marginTop: '10px'}}>Actori celebri</h1> 
 
                 <div style = {{backgroundColor: '#22254b', marginTop: '-150px', marginBottom: '-120px'}} class="container-actors">
-                    <div class="card-actors">
+                    <div style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}} class="card-actors">
                         <img src="https://www.radiooltenia.ro/wp-content/uploads/2016/05/Morgan-Freeman.jpg" alt="Person" class="card__image"></img>
                         <p class="card__name">Morgan Freeman</p>
                         <p style = {{marginTop: '-20px'}}><i>The Shawshank Redemption, Se7en, Bruce Almighty, The Bucket List</i></p>
@@ -202,7 +202,7 @@ const Noutati = () => {
                         </ul>
                     </div>
 
-                    <div class="card-actors">
+                    <div style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}} class="card-actors">
                         <img src="https://www.avantaje.ro/wp-content/uploads/2020/01/Leonardo-DiCaprio.jpg" alt="Person" class="card__image"></img>
                         <p class="card__name">Leonardo DiCaprio</p>
                         <p style = {{marginTop: '-20px'}}><i>Titanic, Shutter Island, The Wolf of Wall Street, The Revenant, Inception</i></p>
@@ -225,7 +225,7 @@ const Noutati = () => {
                         </ul>
                     </div>
 
-                    <div class="card-actors">
+                    <div style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}} class="card-actors">
                         <img style = {{height: '150px'}} src="https://www.geffenplayhouse.org/site/assets/files/4153/bryancranston-1000x1400.jpg" alt="Person" class="card__image"></img>
                         <p class="card__name">Bryan Cranston</p>
                         <p style = {{marginTop: '-20px'}}><i>Breaking Bad, The Upside, El Camino: A Breaking Bad Movie, Your honor</i></p> 

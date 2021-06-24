@@ -19,6 +19,12 @@ const SEARCH_API = "https://api.themoviedb.org/3/search/tv?&api_key=2d7f5ba44937
 function RecomandariSeriale() {
   const [ seriale, setSeriale ] = useState([]);
   const [ searchTerm, setSearchTerm ] = useState('');
+
+  const userJSON = localStorage.getItem('user')
+  const userJSONParsed = JSON.parse(userJSON)
+  console.log(userJSONParsed.nume)
+
+  var obiectGen = document.getElementById('textNode')
   
   useEffect(async () => {
     getMovies(FEATURED_API);
@@ -37,6 +43,7 @@ function RecomandariSeriale() {
     if(searchTerm) {
       getMovies(SEARCH_API+searchTerm);
       setSearchTerm('');
+      obiectGen.innerText = `Rezultatele pentru: ${searchTerm.toUpperCase()}`;
     }
   }
 
@@ -64,6 +71,14 @@ function RecomandariSeriale() {
         </form>
       </header>
 
+      <div style = {{backgroundColor: '#22254b', paddingTop: '20px', paddingBottom: '20px'}}>
+          <h4 style = {{color: 'white', fontFamily: 'Poppins', fontWeight: 'lighter'}}>Buna, <b style = {{color: 'greenyellow'}}>{userJSONParsed.nume}</b>! Pentru ce serial iti doresti recomandari astazi?</h4>
+      </div>
+
+      <div className = "about-section-2" style = {{paddingTop: '16px', paddingBottom: '1px'}}>
+          <p style = {{fontSize: '18px'}} id = 'textNode'></p>
+      </div>
+
       <div className="movie-container-recomandari">
         
       {seriale.length > 0 ? seriale.map(serial => (
@@ -82,8 +97,12 @@ function RecomandariSeriale() {
 
       </div>
 
-      <div style = {{backgroundColor: '#22254b', marginBottom: '-20px', marginLeft: '-780px', color: 'gray', fontFamily: "Poppins", paddingTop: '10px'}}>
-          <p><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> Productiile de pe aceasta pagina provin din sursa The Movie Database</p>
+      <div style = {{backgroundColor: '#22254b', paddingTop: '10px'}}>
+
+      </div>
+
+      <div className = "about-section-2" style = {{paddingTop: '30px', paddingBottom: '20px'}}>
+          <p style = {{fontFamily: 'Poppins'}}><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> Productiile de pe aceasta pagina provin din sursa The Movie Database</p>
       </div>
 
       <Footer></Footer>
