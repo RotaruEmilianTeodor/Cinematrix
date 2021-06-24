@@ -38,6 +38,8 @@ function Filme() {
   const [ filme, setMovies ] = useState([]);
   const [ searchTerm, setSearchTerm ] = useState('');
   
+  var obiectGen = document.getElementById('textNode')
+
   useEffect(async () => {
     getMovies(FEATURED_API)
   }, [])
@@ -55,6 +57,7 @@ function Filme() {
     if(searchTerm) {
       getMovies(SEARCH_API+searchTerm);
       setSearchTerm('');
+      obiectGen.innerText = `Rezultatele pentru: ${searchTerm.toUpperCase()}`;
     }
   }
 
@@ -64,80 +67,92 @@ function Filme() {
 
   const getFilmeActiune = () => {
     getMovies(API_ACTIUNE);
-    // TO DO --------
-    // const p = document.createElement('p');
-    // p.innerText = "Filme de actiune";
-    // p.style.fontSize = '20px';
-    // p.style.color = 'white';
-    // document.querySelector('.pentru-text').appendChild(p);
+    obiectGen.innerText = "Filme de actiune";
   }
 
   const getFilmeAventura = () => {
     getMovies(API_AVENTURA);
+    obiectGen.innerText = "Filme de aventura";
   }
 
   const getFilmeAnimatie = () => {
     getMovies(API_ANIMATIE);
+    obiectGen.innerText = "Filme de animatie";
   }
 
   const getFilmeComedie = () => {
     getMovies(API_COMEDIE);
+    obiectGen.innerText = "Filme de comedie";
   }
 
   const getFilmeCrima = () => {
     getMovies(API_CRIMA);
+    obiectGen.innerText = "Filme crima";
   }
 
   const getFilmeDocumentar = () => {
     getMovies(API_DOCUMENTAR);
+    obiectGen.innerText = "Filme-documentar";
   }
 
   const getFilmeDrama = () => {
     getMovies(API_DRAMA);
+    obiectGen.innerText = "Filme de drama";
   }
 
   const getFilmeFamilie = () => {
     getMovies(API_FAMILIE);
+    obiectGen.innerText = "Filme pentru intreaga familie";
   }
 
   const getFilmeFantasy = () => {
     getMovies(API_FANTASY);
+    obiectGen.innerText = "Filme fantasy";
   }
 
   const getFilmeIstoric = () => {
     getMovies(API_ISTORIC);
+    obiectGen.innerText = "Filme istorice";
   }
 
   const getFilmeHorror = () => {
     getMovies(API_HORROR);
+    obiectGen.innerText = "Filme horror";
   }
 
   const getFilmeMusical = () => {
     getMovies(API_MUSICAL);
+    obiectGen.innerText = "Filme musical";
   }
 
   const getFilmeMister = () => {
     getMovies(API_MISTER);
+    obiectGen.innerText = "Filme de mister";
   }
 
   const getFilmeRomantic = () => {
     getMovies(API_ROMANTIC);
+    obiectGen.innerText = "Filme romantice";
   }
 
   const getFilmeSF = () => {
     getMovies(API_SF);
+    obiectGen.innerText = "Filme SF";
   }
 
   const getFilmeThriller = () => {
     getMovies(API_THRILLER);
+    obiectGen.innerText = "Filme thriller";
   }
 
   const getFilmeRazboi = () => {
     getMovies(API_RAZBOI);
+    obiectGen.innerText = "Filme cu razboi";
   }
 
   const getFilmeWestern = () => {
     getMovies(API_WESTERN);
+    obiectGen.innerText = "Filme western";
   }
 
   return (
@@ -189,7 +204,7 @@ function Filme() {
           <label class="btn btn-outline-primary" for="btncheck9">Fantasy</label>
         </div>
 
-        <div class="btn-group2" role="group" aria-label="Basic checkbox toggle button group">
+        <div style = {{paddingBottom: '20px'}} class="btn-group2" role="group" aria-label="Basic checkbox toggle button group">
           <input type="checkbox" onClick = {getFilmeIstoric} class="btn-check10" id="btncheck10" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck10">Istoric</label>
 
@@ -219,10 +234,12 @@ function Filme() {
         </div>
   
       </div>
-      <div className = "pentru-text" style = {{backgroundColor: '#22254b', marginBottom: '-20px', paddingTop: '10px'}}>
 
+      <div className = "about-section-2" style = {{paddingTop: '25px', paddingBottom: '10px'}}>
+          <p id = 'textNode'></p>
       </div>
-      <div className="movie-container">
+
+      <div style = {{paddingBottom: '10px'}} className="movie-container">
 
         {filme.length > 0 ? filme.map(film => (
           <Film key={film.id} {...film}></Film>
@@ -240,7 +257,7 @@ function Filme() {
 
       </div>
 
-      <div style = {{backgroundColor: '#22254b', marginBottom: '-20px', marginLeft: '-780px', color: 'gray', fontFamily: "Poppins", paddingTop: '10px'}}>
+      <div className = "about-section-2" style = {{paddingTop: '25px', paddingBottom: '10px', color: 'white', fontFamily: 'Poppins'}}>
           <p><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> Productiile de pe aceasta pagina provin din sursa The Movie Database</p>
       </div>
 

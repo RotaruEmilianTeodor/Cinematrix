@@ -34,6 +34,8 @@ const SEARCH_API_TV = "https://api.themoviedb.org/3/search/tv?&api_key=2d7f5ba44
 function Seriale() {
   const [ seriale, setSeriale ] = useState([]);
   const [ searchTermTV, setSearchTermTV ] = useState('');
+
+  var obiectGen = document.getElementById('textNode')
   
   useEffect(async () => {
     getSeriale(FEATURED_API_TV);
@@ -52,6 +54,7 @@ function Seriale() {
     if(searchTermTV) {
       getSeriale(SEARCH_API_TV+searchTermTV);
       setSearchTermTV('');
+      obiectGen.innerText = `Rezultatele pentru: ${searchTermTV.toUpperCase()}`;
     }
   }
 
@@ -61,66 +64,82 @@ function Seriale() {
 
   const getFilmeActiuneSiAventura = () => {
     getSeriale(API_ACTIUNEsiAVENTURA);
+    obiectGen.innerText = "Seriale de actiune si aventura";
   }
 
   const getFilmeAnimatie = () => {
     getSeriale(API_ANIMATIE);
+    obiectGen.innerText = "Seriale de animatie";
   }
 
   const getFilmeComedie = () => {
     getSeriale(API_COMEDIE);
+    obiectGen.innerText = "Seriale de comedie";
   }
 
   const getFilmeCrima = () => {
     getSeriale(API_CRIMA);
+    obiectGen.innerText = "Seriale cu crima";
   }
 
   const getFilmeDocumentar = () => {
     getSeriale(API_DOCUMENTAR);
+    obiectGen.innerText = "Seriale documentar";
   }
 
   const getFilmeDrama = () => {
     getSeriale(API_DRAMA);
+    obiectGen.innerText = "Seriale de drama";
   }
 
   const getFilmeFamilie = () => {
     getSeriale(API_FAMILIE);
+    obiectGen.innerText = "Seriale pentru intreaga familie";
   }
 
   const getFilmeCopii = () => {
     getSeriale(API_COPII);
+    obiectGen.innerText = "Seriale destinate copiilor";
   }
 
   const getFilmeMister = () => {
     getSeriale(API_MISTER);
+    obiectGen.innerText = "Seriale de mister";
   }
 
   const getFilmeStiri = () => {
     getSeriale(API_STIRI);
+    obiectGen.innerText = "Seriale - Stiri";
   }
 
   const getFilmeReality = () => {
     getSeriale(API_REALITY);
+    obiectGen.innerText = "Seriale tip reality";
   }
 
   const getFilmeSFsiFantasy = () => {
     getSeriale(API_SFsiFANTASY);
+    obiectGen.innerText = "Seriale SF si fantasy";
   }
 
   const getFilmeTelenovela = () => {
     getSeriale(API_TELENOVELA);
+    obiectGen.innerText = "Seriale tip telenovela";
   }
 
   const getFilmeTalkShow = () => {
     getSeriale(API_TALKSHOW);
+    obiectGen.innerText = "Seriale - talkshow";
   }
 
   const getFilmeRazboiSiPolitica = () => {
     getSeriale(API_RAZBOIsiPOLITICA);
+    obiectGen.innerText = "Seriale cu razboi si politica";
   }
 
   const getFilmeWestern = () => {
     getSeriale(API_WESTERN);
+    obiectGen.innerText = "Seriale western";
   }
 
   return (
@@ -171,7 +190,7 @@ function Seriale() {
           <label class="btn btn-outline-primary" for="btncheck9">Mister</label>
         </div>
 
-        <div class="btn-group2" role="group" aria-label="Basic checkbox toggle button group">
+        <div style = {{paddingBottom: '20px'}} class="btn-group2" role="group" aria-label="Basic checkbox toggle button group">
           <input type="checkbox" onClick = {getFilmeStiri} class="btn-check10" id="btncheck10" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck10">Stiri</label>
 
@@ -195,7 +214,11 @@ function Seriale() {
         </div>
       </div>
 
-      <div className="movie-container">
+      <div className = "about-section-2" style = {{paddingTop: '25px', paddingBottom: '10px'}}>
+          <p id = 'textNode'></p>
+      </div>
+
+      <div style = {{paddingBottom: '10px'}} className="movie-container">
         
         {seriale.length > 0 ? seriale.map(serial => (
           <Serial key={serial.id} {...serial}></Serial>
@@ -212,7 +235,7 @@ function Seriale() {
         )}
       </div>
 
-      <div style = {{backgroundColor: '#22254b', marginBottom: '-20px', marginLeft: '-780px', color: 'gray', fontFamily: "Poppins", paddingTop: '10px'}}>
+      <div className = "about-section-2" style = {{paddingTop: '25px', paddingBottom: '10px', color: 'white', fontFamily: 'Poppins'}}>
           <p><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> Productiile de pe aceasta pagina provin din sursa The Movie Database</p>
       </div>
 

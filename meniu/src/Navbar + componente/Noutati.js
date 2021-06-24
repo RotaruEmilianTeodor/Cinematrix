@@ -99,7 +99,7 @@ const Noutati = () => {
                     <section style = {{marginTop: '-50px', marginBottom: '-80px'}} class="hero-section">
                         <div class="card-grid">
                             <a class="card-new" href="https://www.youtube.com/watch?v=PwpPneZS5ew" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rEm96ib0sPiZBADNKBHKBv5bve9.jpg)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rEm96ib0sPiZBADNKBHKBv5bve9.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Film</p>
                                     <h3 style = {{paddingTop: '170px'}} class="card__heading">Tom Clancy's Without Remorse</h3>
@@ -107,7 +107,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://www.youtube.com/watch?v=1VIZ89FEjYI" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/original/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/original/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Film</p>
                                     <h3 style = {{paddingTop: '170px'}} class="card__heading">Raya and the Last Dragon</h3>
@@ -115,7 +115,46 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://youtu.be/IWBsDaFWyTE" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7rhzEufovmmUqVjcbzMHTBQ2SCG.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
+                                <div class="card__content">
+                                    <p style = {{marginLeft: '85px'}} class="card__category">Film</p>
+                                    <h3 style = {{paddingTop: '170px', marginLeft: '90px'}} class="card__heading">Luca</h3>
+                                    <p style = {{marginTop: '120px', fontSize: '30px', marginLeft: '87px'}} class="card__text">2021</p>
+                                </div>
+                            </a>
+                            <a class="card-new" href="https://youtu.be/BsOmYpP4UDU" target='_blank'>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xCEg6KowNISWvMh8GvPSxtdf9TO.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
+                                <div class="card__content">
+                                    <p class="card__category">Film</p>
+                                    <h3 style = {{paddingTop: '170px'}} class="card__heading">Those Who Wish Me Dead</h3>
+                                    <p style = {{marginTop: '100px', fontSize: '30px'}} class="card__text">2021</p>
+                                </div>
+                            </a>
+                        <div>
+                            </div>
+                            </div>
+                    </section>
+
+                    <section style = {{marginTop: '-130px', marginBottom: '-80px'}} class="hero-section">
+                        <div class="card-grid">
+                            <a class="card-new" href="https://www.youtube.com/watch?v=PwpPneZS5ew" target='_blank'>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cDzi8k46fpIfmPxt6xOHj7MK5OD.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
+                                <div class="card__content">
+                                    <p class="card__category">Serial</p>
+                                    <h3 style = {{paddingTop: '170px'}} class="card__heading">Alfredino - Una storia italiana</h3>
+                                    <p style = {{marginTop: '100px', fontSize: '30px'}} class="card__text">2021</p>
+                                </div>
+                            </a>
+                            <a class="card-new" href="https://www.youtube.com/watch?v=1VIZ89FEjYI" target='_blank'>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
+                                <div class="card__content">
+                                    <p style = {{marginLeft: '85px'}} class="card__category">Serial</p>
+                                    <h3 style = {{paddingTop: '170px', marginLeft: '90px'}} class="card__heading">Loki</h3>
+                                    <p style = {{marginTop: '120px', fontSize: '30px', marginLeft: '87px'}} class="card__text">2021</p>
+                                </div>
+                            </a>
+                            <a class="card-new" href="https://youtu.be/IWBsDaFWyTE" target='_blank'>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Serial</p>
                                     <h3 style = {{paddingTop: '170px'}} class="card__heading">The Falcon and the Winter Soldier</h3>
@@ -123,7 +162,7 @@ const Noutati = () => {
                                 </div>
                             </a>
                             <a class="card-new" href="https://youtu.be/BsOmYpP4UDU" target='_blank'>
-                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/WjQmEWFrOf98nT5aEfUfVYz9N2.jpg)'}}></div>
+                                <div class="card__background" style = {{backgroundImage: 'url(https://www.themoviedb.org/t/p/w600_and_h900_bestv2/WjQmEWFrOf98nT5aEfUfVYz9N2.jpg)', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}></div>
                                 <div class="card__content">
                                     <p class="card__category">Serial</p>
                                     <h3 style = {{paddingTop: '170px'}} class="card__heading">The Bad Batch TV Series</h3>
