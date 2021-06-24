@@ -161,60 +161,60 @@ function Filme() {
 
       <div className = 'container-butoane'>
         <div style = {{paddingTop: '25px'}} class="btn-group1" role="group" aria-label="Basic checkbox toggle button group">
-          <input type="checkbox" onClick = {getFilmeActiune} class="btn-check" id="btncheck1" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeActiune} class="btn-check1" id="btncheck1" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck1">Actiune</label>
 
-          <input type="checkbox" onClick = {getFilmeAventura} class="btn-check" id="btncheck2" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeAventura} class="btn-check2" id="btncheck2" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck2">Aventura</label>
 
-          <input type="checkbox" onClick = {getFilmeAnimatie} class="btn-check" id="btncheck3" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeAnimatie} class="btn-check3" id="btncheck3" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck3">Animatie</label>
 
-          <input type="checkbox" onClick = {getFilmeComedie} class="btn-check" id="btncheck4" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeComedie} class="btn-check4" id="btncheck4" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck4">Comedie</label>
 
-          <input type="checkbox" onClick = {getFilmeCrima} class="btn-check" id="btncheck5" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeCrima} class="btn-check5" id="btncheck5" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck5">Crima</label>
 
-          <input type="checkbox" onClick = {getFilmeDocumentar} class="btn-check" id="btncheck6" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeDocumentar} class="btn-check6" id="btncheck6" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck6">Documentar</label>
 
-          <input type="checkbox" onClick = {getFilmeDrama} class="btn-check" id="btncheck7" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeDrama} class="btn-check7" id="btncheck7" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck7">Drama</label>
 
-          <input type="checkbox" onClick = {getFilmeFamilie} class="btn-check" id="btncheck8" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeFamilie} class="btn-check8" id="btncheck8" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck8">Familie</label>
 
-          <input type="checkbox" onClick = {getFilmeFantasy} class="btn-check" id="btncheck9" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeFantasy} class="btn-check9" id="btncheck9" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck9">Fantasy</label>
         </div>
 
         <div class="btn-group2" role="group" aria-label="Basic checkbox toggle button group">
-          <input type="checkbox" onClick = {getFilmeIstoric} class="btn-check" id="btncheck10" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeIstoric} class="btn-check10" id="btncheck10" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck10">Istoric</label>
 
-          <input type="checkbox" onClick = {getFilmeHorror} class="btn-check" id="btncheck11" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeHorror} class="btn-check11" id="btncheck11" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck11">Horror</label>
 
-          <input type="checkbox" onClick = {getFilmeMusical} class="btn-check" id="btncheck12" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeMusical} class="btn-check12" id="btncheck12" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck12">Musical</label>
 
-          <input type="checkbox" onClick = {getFilmeMister} class="btn-check" id="btncheck13" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeMister} class="btn-check13" id="btncheck13" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck13">Mister</label>
 
-          <input type="checkbox" onClick = {getFilmeRomantic} class="btn-check" id="btncheck14" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeRomantic} class="btn-check14" id="btncheck14" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck14">Romantic</label>
 
-          <input type="checkbox" onClick = {getFilmeSF} class="btn-check" id="btncheck15" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeSF} class="btn-check15" id="btncheck15" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck15">Science Fiction</label>
 
-          <input type="checkbox" onClick = {getFilmeThriller} class="btn-check" id="btncheck16" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeThriller} class="btn-check16" id="btncheck16" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck16">Thriller</label>
 
-          <input type="checkbox" onClick = {getFilmeRazboi} class="btn-check" id="btncheck17" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeRazboi} class="btn-check17" id="btncheck17" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck17">Razboi</label>
 
-          <input type="checkbox" onClick = {getFilmeWestern} class="btn-check" id="btncheck18" autoComplete="off"></input>
+          <input type="checkbox" onClick = {getFilmeWestern} class="btn-check18" id="btncheck18" autoComplete="off"></input>
           <label class="btn btn-outline-primary" for="btncheck18">Western</label>
         </div>
   
