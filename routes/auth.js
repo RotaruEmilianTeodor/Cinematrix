@@ -136,14 +136,14 @@ router.post('/new-password', (req, res) => {
     })
 })
 
-// router.put('/updateRatingValue', requireLogin, (req, res) => {
-//     User.findByIdAndUpdate(req.user._id, { $set: { ratingValue: req.body.ratingValue } }, { new: true },
-//         (err, result) => {
-//             if (err) {
-//                 return res.status(422).json({ error: err })
-//             }
-//             res.json(result)
-//         })
-// })
+router.put('/updateRatingValue', requireLogin, (req, res) => {
+    User.findByIdAndUpdate(req.user._id, { $set: { ratingValue: req.body.newRatingValue } }, { new: true },
+        (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            res.json(result)
+        })
+})
 
 module.exports = router
