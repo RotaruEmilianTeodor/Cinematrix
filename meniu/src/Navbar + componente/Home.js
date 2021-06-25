@@ -304,10 +304,11 @@ const Home = () => {
                 <h5 style = {{marginLeft: 230}}>Top 10 Filme Animate</h5>
             </div>
 
-            <div style = {{backgroundColor: '#22254b', marginBottom: '-10px', paddingTop: '20px'}}>
+            {localStorage.getItem('jwt') ? <div style = {{backgroundColor: '#22254b', marginBottom: '-10px', paddingTop: '20px'}}>
                 <h6 style = {{marginLeft: '0px', fontFamily: "Poppins", color: 'white'}}>Daca ai cateva secunde, acorda-ne o nota :)</h6>
                 <StarRating></StarRating>
-            </div>
+            </div> : ""}
+            
 
             <ScrollToTop></ScrollToTop>
 

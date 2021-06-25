@@ -41,7 +41,7 @@ const StarRating = () => {
                 // </label>
                 <label>
                 <input type="radio" name="rating" value = {ratingValue} onClick = {() => PostData(ratingValue)}/>
-                <FaRegStar className = 'star' color = {ratingValue <= (hover || userJSONParsed.ratingValue) ? 'ffc107' : 'white'} size ={30} onMouseEnter = {() => setHover(ratingValue)} onMouseLeave = {() => userJSONParsed.ratingValue}></FaRegStar>
+                <FaRegStar className = 'star' color = {ratingValue <= (hover || userJSONParsed.ratingValue) ? 'ffc107' : 'white'} size ={30} onMouseEnter = {() => setHover(ratingValue)} onMouseLeave = {PostData.ratingValue}></FaRegStar>
                 </label> 
                 )
             })}
