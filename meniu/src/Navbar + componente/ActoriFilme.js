@@ -15,6 +15,8 @@ const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=2d7f5ba44
 function ActoriFilme() {
   const [ filme, setMovies ] = useState([]);
   const [ searchTerm, setSearchTerm ] = useState('');
+
+  var obiectGen = document.getElementById('textNode')
   
   useEffect(async () => {
     getMovies(FEATURED_API);
@@ -33,6 +35,7 @@ function ActoriFilme() {
     if(searchTerm) {
       getMovies(SEARCH_API+searchTerm);
       setSearchTerm('');
+      obiectGen.innerText = `Rezultatele pentru: ${searchTerm.toUpperCase()}`;
     }
   }
 
@@ -58,6 +61,14 @@ function ActoriFilme() {
           />
         </form>
       </header>
+
+      <div style = {{backgroundColor: '#22254b', paddingTop: '20px', paddingBottom: '20px'}}>
+
+      </div>
+
+      <div className = "about-section-2" style = {{paddingTop: '16px', paddingBottom: '1px'}}>
+          <p style = {{fontSize: '18px'}} id = 'textNode'></p>
+      </div>
 
       <div className="movie-container-recomandari">
         

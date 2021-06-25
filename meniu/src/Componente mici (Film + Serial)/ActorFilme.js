@@ -27,7 +27,7 @@ const ActorFilme = ({ title, poster_path, backdrop_path, id }) => {
     }
 
     return (
-        <div className='movie-recomandari'>
+        <div style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}} className='movie-recomandari'>
             <div className="movie-header" style = {{position: 'relative'}}>
                 <img src={poster_path ? (IMG_API + poster_path) : 'https://images.unsplash.com/photo-1512070679279-8988d32161be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=678&q=80'} alt={title}/>
                 <button style = {{position: 'absolute', top: 2, left: 5, fontFamily: 'poppins', marginLeft: '110px'}} onClick = {() => setmodalIsOpen(true)}><RiMovieLine className = 'FaThumbsUp'></RiMovieLine></button>

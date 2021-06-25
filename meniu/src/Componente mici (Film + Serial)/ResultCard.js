@@ -14,7 +14,7 @@ const ResultCard = ({movie}) => {
         <div className = 'result-card'>
             <div className="poster-wrapper">
                 {movie.poster_path ? (
-                    <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`}/>
+                    <img style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}} src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`}/>
                 ) : (
                     <div className = 'filler-poster'></div>
                 )}

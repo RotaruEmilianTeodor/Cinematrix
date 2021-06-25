@@ -25,7 +25,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className = 'navbar fixed-top navbar-dark bg-primary navbar-expand-lg'>
+        <nav className = 'navbar fixed-top navbar-dark bg-primary navbar-expand-xl'>
             <Link to = '/home' className = 'navbar-brand' style = {{fontSize: '30px', fontWeight: 'bold' }}><img style = {{width: '200px', height: '40px', marginTop: '-8px'}} src = {LogoCinematrixAlb} alt="" /></Link>
             <h5 className = 'motoSite' style = {{color: 'white', fontWeight: 'lighter', marginTop: 8, marginLeft: 5, marginRight: 15}}>Pentru cinefilul din tine</h5>
             <button

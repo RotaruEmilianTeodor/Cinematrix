@@ -3,7 +3,7 @@ import MovieControls from './MovieControls'
 
 const MovieCard = ({ movie, type }) => {
     return (
-        <div className="movie-card">
+        <div style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.7)'}} className="movie-card">
             <div className="overlay">
                 {movie.poster_path ? (
                     <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={`${movie.title} Poster`}/>
