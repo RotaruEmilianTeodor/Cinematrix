@@ -10,6 +10,7 @@ import { BsInfoSquare } from "react-icons/bs"
 import { FaReact } from "react-icons/fa"
 import { DiMongodb } from "react-icons/di"
 import { BsBootstrap } from "react-icons/bs"
+import { GoMail } from "react-icons/go"
 import ReactMapGl from 'react-map-gl'
 import mapboxgl from 'mapbox-gl'
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
@@ -61,6 +62,11 @@ const Contact = () => {
                         </li>
                     </ul>
                     <br />
+                </div>
+
+                <div>
+                    <p style = {{color: 'white', fontFamily: 'Poppins'}}><GoMail style = {{width: '25px', height: '25px', color: 'white', marginTop: '-2px'}}></GoMail> Daca doriti sa ne contactati in mod direct, o puteti face la adresa de mail: <a href = "mailto:cinematrix.info.contact@gmail.com">cinematrix.info.contact@gmail.com</a></p>
+                    <p style = {{color: 'white', fontFamily: 'Poppins'}}>O sa va incercam sa va raspundem in mai putin de 24 de ore. Va multumim pentru intelegere.</p>
                 </div>
 
             </section>
