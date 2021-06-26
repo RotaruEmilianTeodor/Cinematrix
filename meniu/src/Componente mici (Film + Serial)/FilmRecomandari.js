@@ -47,7 +47,7 @@ const FilmRecomandari = ({ title, poster_path, backdrop_path, id }) => {
             </div>
 
             <Modal closeTimeoutMS={400} className = 'scroll' isOpen = {modalIsOpen} onRequestClose = {() => setmodalIsOpen(false)} style = {{content: {marginTop: '30px', width: '1500px', height: '490px', position: 'absolute', left: '50%', top: '48%', transform: 'translate(-50%, -50%)', backgroundColor: 'rgb(2, 117, 216, 0.5)', color: 'white', border: '1px solid white', overflowX: 'scroll', overflowY: 'hidden'}, overlay: {marginTop: '30px', backgroundImage: `url(${IMG_API + backdrop_path})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}}>
-            <h4 style = {{marginLeft: '10px', marginTop: '5px', fontWeight: 'lighter'}}>Daca ti-a placut <span style = {{color: 'black'}} class="badge bg-dark text-white">{title}</span> incearca si...</h4>  
+            <h4 style = {{marginLeft: '10px', marginTop: '5px', fontWeight: 'lighter'}}>Daca ti-a placut filmul <span style = {{color: 'black'}} class="badge bg-dark text-white">{title}</span> incearca si...</h4>  
             <div className="similarMovies">          
                 {filme.length > 0 ? filme.map(film => (
                     <ModalSimilarMovies key={film.id} {...film}></ModalSimilarMovies>
