@@ -337,6 +337,7 @@ const Home = () => {
                 <div class="accordion-body">Precum orice website care se respecta, si portalul Cinematrix are o pagina unde utilizatorii pot afla <code>termenii si conditiile</code> de folosire a website-ului, cat si informatiile de ordin legislativ ale domeniului. Pentru a le accesa, este nevoie sa dati click pe penultimul link din meniu, pe iconita cu reguli, dupa care se va afisa un overlay cu informatia ceruta.</div>
                 </div>
             </div>
+            
             </div>
 
             <div style = {{backgroundColor: '#22254b', marginBottom: '-10px', paddingTop: '20px'}}>
