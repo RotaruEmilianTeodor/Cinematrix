@@ -47,6 +47,12 @@
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .card__text {
+      display: none !important;
+  }
+}
+
 body {
   background-color: #22254b;
   color: white;

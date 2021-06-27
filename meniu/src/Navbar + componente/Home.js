@@ -24,6 +24,7 @@ import StarRating from '../Componente mici (Film + Serial)/StarRating'
 import { ImEnter } from "react-icons/im"
 import { CgProfile } from "react-icons/cg"
 import { FcVip } from "react-icons/fc"
+import { RiQuestionnaireLine } from "react-icons/ri"
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
 
 const Home = () => {
@@ -281,6 +282,61 @@ const Home = () => {
                     </div>
                 </div>
 
+            </div>
+
+            <div style = {{paddingLeft: '105px', paddingRight: '65px', backgroundColor: '#22254b'}} class="accordion accordion-flush" id="accordionFlushExample">
+            <h5 style = {{color: 'white', marginBottom: '10px'}}><RiQuestionnaireLine style = {{width: '25px', height: '25px'}}></RiQuestionnaireLine> Intrebari frecevente</h5>
+            <p style = {{color: 'white', paddingLeft: '10px', paddingRight: '10px'}}>Deoarece consideram important ca utlizatorii nostri sa aiba intotdeauna acces la cele mai bune metode de a folosi platforma Cienematrix, am cules 5 dintre cele mai frecvent aparute intrebari de la dumneavoastra si le-am oferit raspunsuri pe masura. Nu uitati ca daca exista si altele, paginile noastre CONTACT si AJUTOR va stau la dispozitie.</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Cum se pot accesa detaliile unei productii cinematografice?
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Platforma noastra ofera acces la cele mai importante informatii pentru filmele si serialele dumneavoastra preferate. Pentru a le accesa, intrati pe una din paginile <code>Filme</code> sau <code>Seriale</code>, folositi bara de cautare pentru a gasi productia de care sunteti interesat, si dupa ce se afiseaza rezultatele, la un hover pe aceasta, se va infatisa in coltul din dreapta sus un buton, care odata apasat, va deschide o componenta updatata dinamic, cu informatiile pentru productia cauatata.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Cum ma pot inregistra pe platforma?
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Pentru a va inregistra pe platforma, tot ceea ce trebuie sa faceti este sa accesati submeniul <code>Inregistrare</code> din meniul de Login, iar acolo sa completati cu datele dumneavoastra, urmand ca, dupa ce datele sunt validate, sa vi se creeze un cont.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Nu pot accesa paginile Reccomandari si Lista Personalizata. Ce e de facut?
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Dupa cum scrie si in mesajul pe care un trecator il primeste daca incearca sa acceseze una din cele 2 pagini mai sus mentionate, acestea sunt de tip <code>VIP</code> si pentru a le putea uzita, va fi nevoie de un utilizator de tip <code>Membru</code>, adica veti fi nevoit sa va inregistrati pe plaforma (vezi punctul de sus).</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Cum pot intra in contact cu administratorul site-ului?
+                </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Pentru a intra in contact cu echipa tehnica care se ocupa de bunastarea platformei, utilizatorul este nevoit sa completeze formularul din pagina <code>Contact</code>. Odata apasat butonul Trimite, dupa completarea informatiilor cerute, mesajul va fi trimis automat pe emailul oficial al platformei in cazul interventiilor tehnice (<code>cinematrix.info.contact@gmail.com</code>), urmand ca unul din operatorii nostri sa se ocupe de rezolvarea acestuia. Procesul nu ar trebui sa dureze mai mult de 24 de ore.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Doresc sa aflu mai multe informatii de rang legislativ despre domeniul Cinematrix. Cum pot face acest lucru?
+                </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Precum orice website care se respecta, si portalul Cinematrix are o pagina unde utilizatorii pot afla <code>termenii si conditiile</code> de folosire a website-ului, cat si informatiile de ordin legislativ ale domeniului. Pentru a le accesa, este nevoie sa dati click pe penultimul link din meniu, pe iconita cu reguli, dupa care se va afisa un overlay cu informatia ceruta.</div>
+                </div>
+            </div>
             </div>
 
             <div style = {{backgroundColor: '#22254b', marginBottom: '-10px', paddingTop: '20px'}}>

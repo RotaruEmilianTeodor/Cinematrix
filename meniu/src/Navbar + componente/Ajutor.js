@@ -37,7 +37,7 @@ const Ajutor = () => {
                         <div class="card-body">
                         <h5 class="card-title">Despre pagina <button type="button" class="btn btn-outline-primary">HOME</button></h5>
                         <p class="card-text">Aceasta este prima pagina a platformei, acolo unde veti gasi informatii si noutati legate de lumea cinematografiei, dar si diverse informatii legate de portal.</p>
-                        <p class="card-text">Componente: <i>News Feed, Slider, Info, Youtube Video</i></p>
+                        <p class="card-text">Componente: <i>News Feed, Slider, Info, Intrebati frecvente, Youtube Video</i></p>
                         </div>
                         <div class="card-footer" style = {{backgroundColor: 'rgb(209, 209, 209)'}}>
                         <small class="text-muted">Link: <Link to = '/home'>Home</Link></small>
@@ -106,7 +106,7 @@ const Ajutor = () => {
                         <div class="card-body">
                         <h5 class="card-title">Despre pagina <button type="button" class="btn btn-outline-info">Contact</button></h5>
                         <p class="card-text">Aceasta pagina reprezinta modul de legatura al utilizatorului cu echipa tehnica din spatele portalului CINEMATRIX. In partea de jos a paginii exista sectiunea About.</p>
-                        <p class="card-text">Componente: <i>Map, Date de contact, Informatii, About</i></p>
+                        <p class="card-text">Componente: <i>Formular de contact, Map, Date de contact, Informatii, About</i></p>
                         </div>
                         <div class="card-footer" style = {{backgroundColor: 'rgb(209, 209, 209)'}}>
                         <small class="text-muted">Link: <Link to = '/contact'>Contact</Link></small>
