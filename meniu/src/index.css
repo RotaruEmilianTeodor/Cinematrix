@@ -53,6 +53,18 @@
   }
 }
 
+@media screen and (max-width: 1535px) {
+  .hartaGL {
+      display: none !important;
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  .formularContact {
+      display: none !important;
+  }
+}
+
 body {
   background-color: #22254b;
   color: white;

@@ -53,7 +53,7 @@ const Contact = () => {
 
             <div style = {{backgroundColor: '#22254b', paddingBottom: '1px', paddingTop: '20px', overflow: 'hidden'}}>
             
-            <div style = {{width: '180vh', height: '50vh', marginLeft: '110px', border: '3px solid #0275d8'}}>
+            <div className = 'hartaGL' style = {{width: '180vh', height: '50vh', marginLeft: '110px', border: '3px solid #0275d8'}}>
                 <ReactMapGl {...viewport} mapboxApiAccessToken = "pk.eyJ1IjoiMXN0ZW1pbHUiLCJhIjoiY2twY3kzaTRxMWlkMzMxbng4Mjg0OTc4aSJ9.M0Cl-YEOp9KLvXqb2g4IYw" mapStyle = "mapbox://styles/1stemilu/ckpcyde844n9y17mslnw2r3ov" onViewportChange = {(viewport) => {setViewPort(viewport)}}></ReactMapGl>
             </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
             <h2 style = {{color: 'white'}} class="h1-responsive font-weight-bold text-center my-4">Contacteaza-ne</h2>
             <p style = {{color: 'white'}} class="text-center w-responsive mx-auto mb-5">Speram ca sunteti multumiti de platforma noastra. Daca totusi intampinati probleme de orice natura, nu ezitati sa ne contactati prin completarea urmatorului formular:</p>
 
-                <div class="row">
+                <div className = 'formularContact' class="row">
 
                     <div class="col-md-9 mb-md-0 mb-5">
                         <form onSubmit = {sendEmail}>

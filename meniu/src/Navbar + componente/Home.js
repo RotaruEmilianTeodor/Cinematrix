@@ -285,7 +285,7 @@ const Home = () => {
             </div>
 
             <div style = {{paddingLeft: '105px', paddingRight: '65px', backgroundColor: '#22254b'}} class="accordion accordion-flush" id="accordionFlushExample">
-            <h5 style = {{color: 'white', marginBottom: '10px'}}><RiQuestionnaireLine style = {{width: '25px', height: '25px'}}></RiQuestionnaireLine> Intrebari frecevente</h5>
+            <h5 style = {{color: 'white', marginBottom: '10px'}}><RiQuestionnaireLine style = {{width: '25px', height: '25px'}}></RiQuestionnaireLine> Intrebari frecvente</h5>
             <p style = {{color: 'white', paddingLeft: '10px', paddingRight: '10px'}}>Deoarece consideram important ca utlizatorii nostri sa aiba intotdeauna acces la cele mai bune metode de a folosi platforma Cienematrix, am cules 5 dintre cele mai frecvent aparute intrebari de la dumneavoastra si le-am oferit raspunsuri pe masura. Nu uitati ca daca exista si altele, paginile noastre CONTACT si AJUTOR va stau la dispozitie.</p>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
