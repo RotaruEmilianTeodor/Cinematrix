@@ -107,7 +107,7 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <input style = {{marginLeft: '-660px', marginTop: '20px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="submit" className = 'btn btn-info' value = 'Trimite'/>
+                                <input style = {{marginLeft: '-660px', marginTop: '20px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)', backgroundColor: '#0275d8'}} type="submit" className = 'btn btn-info' value = 'Trimite'/>
                             </div>
 
                             <div>

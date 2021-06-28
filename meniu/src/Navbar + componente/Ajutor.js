@@ -17,8 +17,21 @@ import { BsChatQuote } from "react-icons/bs"
 import { FcVip } from "react-icons/fc"
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
 import { FcRules } from "react-icons/fc"
+import emailjs from 'emailjs-com'
 
 const Ajutor = () => {
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_pbrco1z', e.target, 'user_EttyRsAEJCDQuEXVU7dFJ')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    }
+
     return (
         <div>
             <Navbar></Navbar>
@@ -158,6 +171,26 @@ const Ajutor = () => {
 
             </div>
 
+            <div style = {{backgroundColor: '#22254b', paddingLeft: '420px', paddingRight: '400px', paddingBottom: '40px', marginBottom: '-15px'}}>
+                <form onSubmit = {sendEmail}>
+                    <h4 style = {{color: 'white', marginTop: '-20px', fontFamily: 'Poppins'}}>Lasa-ne review-ul tau!</h4>
+                    <p style = {{color: 'gray', fontFamily: 'Poppins'}}>Dupa ce utilizezi platforma noastra, iti asteptam parerea intr-un mesaj care va ajunge direct la administratorul site-ului. Iti multumim ca esti aici!</p>
+                    <div style = {{border: '1px solid white', padding: '20px'}}>
+                        <div class="form-floating mb-3">
+                            <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="email" name = 'email' class="form-control" id="floatingInput" placeholder="name@example.com" required></input>
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating">
+                            <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="text" name = 'text' class="form-control" id="floatingText" placeholder="Text" required></input>
+                            <label for="floatingText">Review</label>
+                        </div>
+                        <div>
+                            <input style = {{marginLeft: '0px', marginTop: '20px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)', backgroundColor: '#0275d8'}} type="submit" className = 'btn btn-info' value = 'Trimite'/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
             <div style = {{paddingBottom: '10px'}} className = "about-section-2">
                 <p style = {{fontFamily: 'Poppins'}}>Pentru a afla <b>termenii si conditiile</b> folosirii site-ului, te invitam sa apesi pe iconita <FcRules style = {{width: '25px', height: '25px', marginTop: '-2px'}}></FcRules> din meniu.</p>
                 <p style = {{fontFamily: 'Poppins'}}>In cazul in care doresti sa iesi din cont sau sa revii la pagina de Login, te invitam sa apesi pe butonul de <b>LOGOUT</b> din coltul din dreapta sus.</p>
