@@ -70,14 +70,14 @@ const Contact = () => {
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <label style = {{color: 'white', marginLeft: '-100px'}} for="name" class="">Nume:</label>
-                                        <input style = {{marginLeft: '200px'}} type="text" id="name" name="name" class="form-control"></input>
+                                        <input style = {{marginLeft: '200px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="text" id="name" name="name" class="form-control" required></input>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <label style = {{color: 'white', marginLeft: '-110px'}} for="email" class="">Email:</label>
-                                        <input style = {{marginLeft: '198px'}} type="text" id="email" name="email" class="form-control"></input>
+                                        <input style = {{marginLeft: '198px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="text" id="email" name="email" class="form-control" required></input>
                                         <br />
                                     </div>
                                 </div>
@@ -87,8 +87,8 @@ const Contact = () => {
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
-                                        <label style = {{color: 'white', marginLeft: '-670px'}} for="subject" class="">Subiect:</label>
-                                        <input style = {{marginLeft: '200px'}} type="text" id="subject" name="subject" class="form-control"></input>
+                                        <label style = {{color: 'white', marginLeft: '-600px'}} for="subject" class="">Subiect <i style = {{fontWeight: 'lighter'}}>[optional]</i>:</label>
+                                        <input style = {{marginLeft: '200px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="text" id="subject" name="subject" class="form-control"></input>
                                         <br />
                                     </div>
                                 </div>
@@ -99,15 +99,15 @@ const Contact = () => {
                                 <div class="col-md-12">
 
                                     <div class="md-form">
-                                        <label style = {{color: 'white', marginLeft: '-670px'}} for="message">Mesaj:</label>
-                                        <textarea style = {{marginLeft: '200px'}} type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>                                       
+                                        <label style = {{color: 'white', marginLeft: '-680px'}} for="message">Mesaj:</label>
+                                        <textarea style = {{marginLeft: '200px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>                                       
                                     </div>
 
                                 </div>
                             </div>
 
                             <div>
-                                <input style = {{marginLeft: '-660px', marginTop: '20px'}} type="submit" className = 'btn btn-info' value = 'Trimite'/>
+                                <input style = {{marginLeft: '-660px', marginTop: '20px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="submit" className = 'btn btn-info' value = 'Trimite'/>
                             </div>
 
                             <div>
@@ -117,7 +117,7 @@ const Contact = () => {
                         </form>
                     </div>
 
-                    <div style = {{marginTop: '10px'}}>
+                    <div style = {{marginTop: '3px'}}>
                     <ul style = {{marginTop: '20px'}} class="list-unstyled mb-0">
                         <li style = {{marginLeft: '-800px'}}><i><FaMapMarkerAlt className = 'FaMap'></FaMapMarkerAlt></i>
                             <p style = {{color: 'white'}}><b>Adresa sediului:</b> Petresti, VN, Romania</p>
@@ -136,8 +136,8 @@ const Contact = () => {
 
                 </div>
 
-                <div>
-                    <p style = {{color: 'white', fontFamily: 'Poppins'}}><GoMail style = {{width: '25px', height: '25px', color: 'white', marginTop: '-2px'}}></GoMail> Daca doriti sa ne contactati in mod direct, o puteti face la una din adresele noastre de mail: <a href = "mailto:cinematrix.info.contact@gmail.com">cinematrix.info.contact@gmail.com</a></p>
+                <div style = {{border: '1px solid white', marginLeft: '200px', marginRight: '183px', backgroundColor: '#373b69', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}}>
+                    <p style = {{color: 'white', fontFamily: 'Poppins', marginTop: '10px'}}><GoMail style = {{width: '25px', height: '25px', color: 'white', marginTop: '-2px'}}></GoMail> Daca doriti sa ne contactati in mod direct, o puteti face la una din adresele noastre de mail: <a href = "mailto:cinematrix.info.contact@gmail.com">cinematrix.info.contact@gmail.com</a></p>
                     <p style = {{color: 'white', fontFamily: 'Poppins', marginLeft: '678px'}}> sau <a href = "mailto:rotaruemilian18@stud.ase.ro">rotaruemilian18@stud.ase.ro</a></p>
                     <p style = {{color: 'white', fontFamily: 'Poppins'}}>O sa va incercam sa va raspundem in mai putin de 24 de ore. Va multumim pentru intelegere!</p>
                 </div>
