@@ -22,6 +22,8 @@ import StarRating from '../Componente mici (Film + Serial)/StarRating'
 
 const Ajutor = () => {
     var obiectGen = document.getElementById('textNode')
+    const userJSON = localStorage.getItem('user')
+    const userJSONParsed = JSON.parse(userJSON)
 
     function sendEmail(e) {
         e.preventDefault();
@@ -178,7 +180,11 @@ const Ajutor = () => {
             <div style = {{backgroundColor: '#22254b', paddingLeft: '420px', paddingRight: '400px', paddingBottom: '40px', marginBottom: '-15px'}}>
                 <form onSubmit = {sendEmail}>
                     <h4 style = {{color: 'white', marginTop: '-20px', fontFamily: 'Poppins'}}>Lasa-ne review-ul tau!</h4>
-                    <p style = {{color: 'gray', fontFamily: 'Poppins'}}>Dupa ce utilizezi platforma noastra, iti asteptam parerea intr-un mesaj care va ajunge direct la administratorul site-ului. Iti multumim ca esti aici!</p>
+                    {userJSON ? 
+                        <p style = {{color: 'gray', fontFamily: 'Poppins'}}><b style = {{color: 'green'}}>{userJSONParsed.nume}</b>, dupa ce utilizezi platforma noastra, iti asteptam parerea intr-un mesaj care va ajunge direct la administratorul site-ului. Iti multumim ca esti aici!</p>
+                    : 
+                        <p style = {{color: 'gray', fontFamily: 'Poppins'}}><b style = {{color: 'green'}}>Trecatorule</b>, dupa ce utilizezi platforma noastra, iti asteptam parerea intr-un mesaj care va ajunge direct la administratorul site-ului. Iti multumim ca esti aici!</p>
+                    }
                     <div style = {{border: '1px solid white', padding: '20px', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}>
                         <div class="form-floating mb-3">
                             <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="email" name = 'email' class="form-control" id="floatingInput" placeholder="name@example.com" required></input>

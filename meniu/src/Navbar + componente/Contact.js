@@ -20,6 +20,9 @@ import emailjs from 'emailjs-com'
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 const Contact = () => {
+    const userJSON = localStorage.getItem('user')
+    const userJSONParsed = JSON.parse(userJSON)
+
     const [viewport, setViewPort] = useState({
         latitude: 45.730320,
         longitude: 27.227150,
@@ -59,9 +62,17 @@ const Contact = () => {
 
             <section class="mb-4">
 
-            <h2 style = {{color: 'white'}} class="h1-responsive font-weight-bold text-center my-4">Contacteaza-ne</h2>
-            <p style = {{color: 'white'}} class="text-center w-responsive mx-auto mb-5">Speram ca sunteti multumiti de platforma noastra. Daca totusi intampinati probleme de orice natura, nu ezitati sa ne contactati prin completarea urmatorului formular:</p>
-
+            {userJSON ? 
+            <div>
+                <h2 style = {{color: 'white', fontFamily: 'Poppins'}} class="h1-responsive font-weight-bold text-center my-4">Contacteaza-ne</h2>
+                <p style = {{color: 'white', paddingLeft: '300px', paddingRight: '300px', fontFamily: 'Poppins'}} class="text-center w-responsive mx-auto mb-5">Draga <b style = {{color: 'green'}}>{userJSONParsed.nume}</b>, speram ca esti multumit de platforma noastra. Daca totusi intampini probleme de orice natura, nu ezita sa ne contactezi prin completarea urmatorului formular:</p>
+            </div>
+            : 
+            <div>
+                <h2 style = {{color: 'white', fontFamily: 'Poppins'}} class="h1-responsive font-weight-bold text-center my-4">Contacteaza-ne</h2>
+                <p style = {{color: 'white', paddingLeft: '300px', paddingRight: '300px', fontFamily: 'Poppins'}} class="text-center w-responsive mx-auto mb-5">Draga <b style = {{color: 'green'}}>trecatorule</b>, speram ca esti multumit de platforma noastra. Daca totusi intampini probleme de orice natura, nu ezita sa ne contactezi prin completarea urmatorului formular:</p>
+            </div>}
+            
                 <div style = {{marginTop: '-15px'}} className = 'formularContact' class="row">
 
                     <div class="col-md-9 mb-md-0 mb-5">
@@ -118,7 +129,7 @@ const Contact = () => {
                     </div>
 
                     <div style = {{marginTop: '3px'}}>
-                    <ul style = {{marginTop: '20px'}} class="list-unstyled mb-0">
+                    <ul style = {{marginTop: '0px'}} class="list-unstyled mb-0">
                         <li style = {{marginLeft: '-800px'}}><i><FaMapMarkerAlt className = 'FaMap'></FaMapMarkerAlt></i>
                             <p style = {{color: 'white'}}><b>Adresa sediului:</b> Petresti, VN, Romania</p>
                         </li>
