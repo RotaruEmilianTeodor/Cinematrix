@@ -62,7 +62,7 @@ const Contact = () => {
             <h2 style = {{color: 'white'}} class="h1-responsive font-weight-bold text-center my-4">Contacteaza-ne</h2>
             <p style = {{color: 'white'}} class="text-center w-responsive mx-auto mb-5">Speram ca sunteti multumiti de platforma noastra. Daca totusi intampinati probleme de orice natura, nu ezitati sa ne contactati prin completarea urmatorului formular:</p>
 
-                <div className = 'formularContact' class="row">
+                <div style = {{marginTop: '-15px'}} className = 'formularContact' class="row">
 
                     <div class="col-md-9 mb-md-0 mb-5">
                         <form onSubmit = {sendEmail}>

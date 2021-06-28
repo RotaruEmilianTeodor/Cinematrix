@@ -30,6 +30,19 @@ const StarRating = () => {
         )
     }
 
+    // useEffect(() => {
+    //     fetch('/updateRatingValue', {
+    //         headers: {
+    //             "Authorization": "Bearer " + localStorage.getItem("jwt")
+    //         }
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             PostData(data.ratingValue)
+    //         })
+    //         .catch(err => console.log(err))
+    // }, [])
+
     return (
         <div>
             {[...Array(5)].map((star, i) => {

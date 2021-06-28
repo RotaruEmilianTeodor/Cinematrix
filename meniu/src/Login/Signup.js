@@ -46,20 +46,20 @@ const Signup = () => {
                 <div className="form-inner">
                     <img style = {{width: '300px', height: '70px', marginBottom: '10px'}} src = {LogoCinematrix} alt="" />
                     <hr/>
-                    <h2>Inregistare</h2>
+                    <h2 style = {{fontFamily: 'Poppins'}}>Inregistare</h2>
                     
                     {(error != "") ? (<div class="alert alert-warning d-flex align-items-center" role="alert"><FiAlertTriangle style = {{width: '20px', height: '20px', marginRight: '10px', marginTop: '-2px'}}></FiAlertTriangle> {error}</div>) : ""}
 
                     <div className="form-group">
-                        <label htmlFor="name">Nume: </label>
+                        <label style = {{fontFamily: 'Poppins'}} htmlFor="name">Nume: </label>
                         <input type="text" value = {nume} onChange = {(e) => setNume(e.target.value)}/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">Email: </label>
+                        <label style = {{fontFamily: 'Poppins'}} htmlFor="email">Email: </label>
                         <input type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="password">Parola: </label>
+                        <label style = {{fontFamily: 'Poppins'}} htmlFor="password">Parola: </label>
                         <input type="password" value = {parola} onChange = {(e) => setParola(e.target.value)}/>
                     </div>
                     <input type="submit" value="Inregistreaza-te" onClick = {() => PostData()}/>

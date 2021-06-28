@@ -366,7 +366,6 @@ const Home = () => {
                 <StarRating></StarRating>
             </div> : ""}
             
-
             <ScrollToTop></ScrollToTop>
 
             <Footer></Footer>

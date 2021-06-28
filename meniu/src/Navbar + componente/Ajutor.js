@@ -18,8 +18,11 @@ import { FcVip } from "react-icons/fc"
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
 import { FcRules } from "react-icons/fc"
 import emailjs from 'emailjs-com'
+import StarRating from '../Componente mici (Film + Serial)/StarRating'
 
 const Ajutor = () => {
+    var obiectGen = document.getElementById('textNode')
+
     function sendEmail(e) {
         e.preventDefault();
 
@@ -30,6 +33,7 @@ const Ajutor = () => {
             console.log(error.text);
         });
         e.target.reset()
+        obiectGen.innerText = 'Mesajul a fost trimis! Va multumim!'
     }
 
     return (
@@ -175,7 +179,7 @@ const Ajutor = () => {
                 <form onSubmit = {sendEmail}>
                     <h4 style = {{color: 'white', marginTop: '-20px', fontFamily: 'Poppins'}}>Lasa-ne review-ul tau!</h4>
                     <p style = {{color: 'gray', fontFamily: 'Poppins'}}>Dupa ce utilizezi platforma noastra, iti asteptam parerea intr-un mesaj care va ajunge direct la administratorul site-ului. Iti multumim ca esti aici!</p>
-                    <div style = {{border: '1px solid white', padding: '20px'}}>
+                    <div style = {{border: '1px solid white', padding: '20px', boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}}>
                         <div class="form-floating mb-3">
                             <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="email" name = 'email' class="form-control" id="floatingInput" placeholder="name@example.com" required></input>
                             <label for="floatingInput">Email</label>
@@ -184,8 +188,14 @@ const Ajutor = () => {
                             <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} type="text" name = 'text' class="form-control" id="floatingText" placeholder="Text" required></input>
                             <label for="floatingText">Review</label>
                         </div>
+                        {localStorage.getItem('jwt') ? 
+                        <p style = {{color: 'white', marginTop: '10px', marginBottom: '-10px'}}>Cate stele meritam? :)<StarRating></StarRating></p>
+                        : ''}
                         <div>
                             <input style = {{marginLeft: '0px', marginTop: '20px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)', backgroundColor: '#0275d8'}} type="submit" className = 'btn btn-info' value = 'Trimite'/>
+                        </div>
+                        <div>
+                            <p style = {{fontSize: '17px', marginTop: '10px', marginBottom: '-10px'}} id = 'textNode'></p>
                         </div>
                     </div>
                 </form>
