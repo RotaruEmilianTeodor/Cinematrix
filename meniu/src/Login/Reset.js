@@ -44,10 +44,10 @@ const Reset = () => {
                     {(error != "") ? (<div className="error">{error}</div>) : ""}
                     <div className="form-group">
                         <label htmlFor="email">Email: </label>
-                        <input type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>
+                        <input style = {{border: '1px solid rgb(175, 175, 175)', boxShadow: '0px 4px 7px rgba(0,0,0,.2)'}} type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>
                     </div>
-                    <input type="submit" value="Resetare parola" onClick = {() => PostData()}/>
-                    <Link style = {{float: 'right'}} className = 'linkLogout nav-link' to = '/'>Inapoi</Link>
+                    <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.7)'}} type="submit" value="Resetare parola" onClick = {() => PostData()}/>
+                    <Link style = {{float: 'right', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} className = 'linkLogout nav-link' to = '/'>Inapoi</Link>
                 </div>
             </div>
         </div>

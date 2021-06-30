@@ -26,8 +26,8 @@ const Profil = () => {
                     </div>
                     <p style = {{fontFamily: 'Poppins', fontSize: '16px', marginTop: '5px', marginBottom: '-5px', color: 'black'}}>Distractie placuta!</p>
                     <p style = {{fontFamily: 'Poppins', fontSize: '13px', marginTop: '5px', fontWeight: 'lighter', color: 'black'}}>Echipa CINEMATRIX</p>
-                    <Link className = 'linkIntraInSite nav-link' to = '/home'>Intra in pagina</Link> 
-                    <Link onClick = {DeleteFromLocalStorage} style = {{float: 'right', marginTop: '-43px'}} className = 'linkLogout nav-link' to = '/'>LOGOUT</Link> 
+                    <Link style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} className = 'linkIntraInSite nav-link' to = '/home'>Intra in pagina</Link> 
+                    <Link onClick = {DeleteFromLocalStorage} style = {{float: 'right', marginTop: '-43px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} className = 'linkLogout nav-link' to = '/'>LOGOUT</Link> 
                 </div>
             </div>
         </div>

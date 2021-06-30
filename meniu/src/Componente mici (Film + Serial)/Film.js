@@ -99,9 +99,9 @@ const Film = ({ title, poster_path, overview, vote_average, release_date, origin
                 {(
                     actors 
                 ) ? <p style = {{fontFamily: 'Poppins', color: 'black', marginTop: '-5px'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <RiUserStarLine style = {{width: '25px', height: '25px'}}></RiUserStarLine> Din distributie face parte: <b>{actors.name}</b></p> : 'Nu avem actori'}
-                <Link style = {{marginLeft: '40px', fontSize: '13px'}} to = '/recomandari-filme' type="button" class="btn btn-danger">Recomandari filme</Link>
-                <Link style = {{marginLeft: '10px', fontSize: '13px'}} to = '/lista-personalizata' type="button" class="btn btn-warning">Lista personalizata</Link>
-                <Link style = {{marginLeft: '10px', fontSize: '13px'}} to = '/actori-filme' type="button" class="btn btn-success">Actori</Link>
+                <Link style = {{marginLeft: '40px', fontSize: '13px', boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} to = '/recomandari-filme' type="button" class="btn btn-danger">Recomandari filme</Link>
+                <Link style = {{marginLeft: '10px', fontSize: '13px', boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} to = '/lista-personalizata' type="button" class="btn btn-warning">Lista personalizata</Link>
+                <Link style = {{marginLeft: '10px', fontSize: '13px', boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} to = '/actori-filme' type="button" class="btn btn-success">Actori</Link>
                 <div style = {{position: 'absolute', bottom: '0', marginLeft: '120px', marginBottom: '2px', float: 'left'}}>
                     <p style = {{fontWeight: 'lighter'}}>Acest film a fost votat de <b style = {{color: 'black'}}>{vote_count}</b> de oameni</p>
                 </div>

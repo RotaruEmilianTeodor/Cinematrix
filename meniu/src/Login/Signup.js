@@ -52,18 +52,18 @@ const Signup = () => {
 
                     <div className="form-group">
                         <label style = {{fontFamily: 'Poppins'}} htmlFor="name">Nume: </label>
-                        <input type="text" value = {nume} onChange = {(e) => setNume(e.target.value)}/>
+                        <input style = {{border: '1px solid rgb(175, 175, 175)', boxShadow: '0px 4px 7px rgba(0,0,0,.2)'}} type="text" value = {nume} onChange = {(e) => setNume(e.target.value)}/>
                     </div>
-                    <div className="form-group">
+                    <div style = {{marginTop: '-3px'}} className="form-group">
                         <label style = {{fontFamily: 'Poppins'}} htmlFor="email">Email: </label>
-                        <input type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>
+                        <input style = {{border: '1px solid rgb(175, 175, 175)', boxShadow: '0px 4px 7px rgba(0,0,0,.2)'}} type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>
                     </div>
-                    <div className="form-group">
+                    <div style = {{marginTop: '-3px'}} className="form-group">
                         <label style = {{fontFamily: 'Poppins'}} htmlFor="password">Parola: </label>
-                        <input type="password" value = {parola} onChange = {(e) => setParola(e.target.value)}/>
+                        <input style = {{border: '1px solid rgb(175, 175, 175)', boxShadow: '0px 4px 7px rgba(0,0,0,.2)'}} type="password" value = {parola} onChange = {(e) => setParola(e.target.value)}/>
                     </div>
-                    <input type="submit" value="Inregistreaza-te" onClick = {() => PostData()}/>
-                    <Link style = {{float: 'right'}} className = 'linkLogout nav-link' to = '/'>Inapoi</Link>
+                    <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.7)'}} type="submit" value="Inregistreaza-te" onClick = {() => PostData()}/>
+                    <Link style = {{float: 'right', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} className = 'linkLogout nav-link' to = '/'>Inapoi</Link>
                 </div>
             </div>
         </div>

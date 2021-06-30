@@ -26,10 +26,14 @@ import { CgProfile } from "react-icons/cg"
 import { FcVip } from "react-icons/fc"
 import { RiQuestionnaireLine } from "react-icons/ri"
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
+import Time from '../Componente mici (Film + Serial)/Time'
 
 const Home = () => {
     const userJSON = localStorage.getItem('user')
     const userJSONParsed = JSON.parse(userJSON)
+
+    var today = new Date()
+    var curHr = today.getHours()
 
     return (
         <div>
@@ -43,7 +47,11 @@ const Home = () => {
             <Link to = '/profil-mare'><CgProfile style = {{width: '27px', height: '27px', marginTop: '11px', right: '40px' , position: 'absolute', color: 'hsl(339, 79%, 51%)'}}></CgProfile></Link>
             </header>
 
-            <div style = {{paddingBottom: '10px'}} className = 'homeContainer'>
+            <div style = {{backgroundColor: '#22254b', paddingBottom: '1px', paddingTop: '10px'}}>
+                <Time></Time>
+            </div>
+
+            <div style = {{paddingBottom: '10px', marginTop: '-30px'}} className = 'homeContainer'>
                 <div className="news">
                     <span>News Feed</span>
                     <ul>
@@ -60,6 +68,11 @@ const Home = () => {
             </div>
 
             <div className="about-section-2">
+                {userJSONParsed ? 
+                    <h4 style = {{fontFamily: 'Poppins', fontWeight: 'lighter', color: 'greenyellow'}}>{curHr < 12 ? `Buna dimineata, ${userJSONParsed.nume}` : curHr < 18 ? `Buna ziua, ${userJSONParsed.nume}` : `Buna seara, ${userJSONParsed.nume}`}</h4>
+                : 
+                    <h4 style = {{fontFamily: 'Poppins', fontWeight: 'lighter', color: 'greenyellow'}}>{curHr < 12 ? 'Buna dimineata, trecatorule' : curHr < 18 ? 'Buna ziua, trecatorule' : 'Buna seara, trecatorule'}</h4>
+                }
                 <h1 style = {{fontWeight: 'lighter'}}>Bine te-am gasit pe platforma CINEMATRIX! <ImEnter style = {{marginTop: '-4px'}}></ImEnter></h1>
             </div>
             

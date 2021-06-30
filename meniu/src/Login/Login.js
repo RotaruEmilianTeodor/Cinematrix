@@ -49,7 +49,7 @@ const Login = () => {
             <div className = 'formLogin'>
                 <div className="form-inner">
                     <img style = {{width: '300px', height: '70px', marginBottom: '10px'}} src = {LogoCinematrix} alt="" />
-                    <Link style = {{marginLeft: '5px'}} className = 'linkFaraCont nav-link' to = '/profil-2'>Intra fara cont <BiLogIn style = {{width: '20px', height: '20px', marginTop: '-1px'}}></BiLogIn></Link>
+                    <Link style = {{marginLeft: '5px', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} className = 'linkFaraCont nav-link' to = '/profil-2'>Intra fara cont <BiLogIn style = {{width: '20px', height: '20px', marginTop: '-1px'}}></BiLogIn></Link>
                     <hr/>
                     <h2 style = {{fontFamily: 'Poppins'}}>Logheaza-te</h2>
 
@@ -57,14 +57,14 @@ const Login = () => {
 
                     <div className="form-group">
                         <label htmlFor="email" style = {{fontFamily: 'Poppins'}}>Email: </label>
-                        <input type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>
+                        <input style = {{border: '1px solid rgb(175, 175, 175)', boxShadow: '0px 4px 7px rgba(0,0,0,.2)'}} type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>
                     </div>
-                    <div className="form-group">
+                    <div style = {{marginTop: '-4px'}} className="form-group">
                         <label htmlFor="password" style = {{fontFamily: 'Poppins'}}>Parola: </label>
-                        <input type="password" value = {parola} onChange = {(e) => setParola(e.target.value)}/>
+                        <input style = {{border: '1px solid rgb(175, 175, 175)', boxShadow: '0px 4px 7px rgba(0,0,0,.2)'}} type="password" value = {parola} onChange = {(e) => setParola(e.target.value)}/>
                     </div>
-                    <input type="submit" value = 'LOGIN    ' onClick = {() => PostData()}/><TiInputCheckedOutline style = {{marginLeft: '-33px', width: '25px', height: '25px', color: 'white', marginTop: '-4px'}}></TiInputCheckedOutline>
-                    <Link className = 'linkInregistrare nav-link' to = '/inregistrare'>Inregistrare</Link>
+                    <input style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.7)'}} type="submit" value = 'LOGIN    ' onClick = {() => PostData()}/><TiInputCheckedOutline style = {{marginLeft: '-33px', width: '25px', height: '25px', color: 'white', marginTop: '-4px'}}></TiInputCheckedOutline>
+                    <Link style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}} className = 'linkInregistrare nav-link' to = '/inregistrare'>Inregistrare</Link>
                     <hr/>
                     <div>
                         <Link to = '/reset'>Ai uitat parola? <RiLockPasswordLine style = {{width: '20px', height: '20px', marginTop: '-1px'}}></RiLockPasswordLine></Link>

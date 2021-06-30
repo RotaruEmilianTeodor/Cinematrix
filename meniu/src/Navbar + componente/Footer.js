@@ -4,6 +4,7 @@ import { SiImdb } from "react-icons/si"
 import { IoHandRightSharp } from "react-icons/io5"
 import LogoCinematrix from "../images/CinematrixLogo.png"
 import { Link } from 'react-router-dom'
+import Time from '../Componente mici (Film + Serial)/Time'
  
 const Footer = () => {
     const DeleteFromLocalStorage = () => {

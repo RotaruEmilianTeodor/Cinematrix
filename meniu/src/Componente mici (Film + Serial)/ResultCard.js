@@ -29,8 +29,8 @@ const ResultCard = ({movie}) => {
                     </h4>
                 </div>
                 <div>
-                    <button className="btnLista" disabled = {watchListDisabled} onClick = {() => addMovieToWatchlist(movie)}>Adauga la DE VAZUT</button>
-                    <button className="btnLista2" disabled = {watchedDisabled} onClick = {() => addMovieToWatched(movie)}>Adauga la VAZUTE</button>
+                    <button style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} className="btnLista" disabled = {watchListDisabled} onClick = {() => addMovieToWatchlist(movie)}>Adauga la DE VAZUT</button>
+                    <button style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} className="btnLista2" disabled = {watchedDisabled} onClick = {() => addMovieToWatched(movie)}>Adauga la VAZUTE</button>
                 </div>
             </div>
         </div>
