@@ -67,7 +67,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="about-section-2">
+            <div className="about-section-home">
                 {userJSONParsed ? 
                     <h4 style = {{fontFamily: 'Poppins', fontWeight: 'lighter', color: 'greenyellow'}}>{curHr < 12 ? `Buna dimineata, ${userJSONParsed.nume}` : curHr < 18 ? `Buna ziua, ${userJSONParsed.nume}` : `Buna seara, ${userJSONParsed.nume}`}</h4>
                 : 
