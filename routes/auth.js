@@ -24,12 +24,12 @@ router.get('/protected', requireLogin, (req, res) => {
 router.post('/signup', (req, res) => {
     const {nume, email, parola} = req.body
     if (!nume || !email || !parola) {
-        return res.status(422).json({error: 'please add all the field'})
+        return res.status(422).json({error: 'Te rugam sa completezi toate casutele'})
     }
     User.findOne({email:email})
     .then((savedUser) => {
         if(savedUser) {
-            return res.status(422).json({error: 'user already exist with that email'})
+            return res.status(422).json({error: 'Deja exista un utilizator cu acest email'})
         }
         bcrypt.hash(parola, 12)
         .then(hashedparola => {
@@ -61,12 +61,12 @@ router.post('/signup', (req, res) => {
 router.post('/signin', (req, res) => {
     const {email, parola} = req.body 
     if(!email || !parola) {
-        return res.status(422).json({error: 'please add email or password'})
+        return res.status(422).json({error: 'Va rugam sa introduceti emailul sau parola'})
     }
     User.findOne({email: email})
     .then(savedUser => {
         if(!savedUser){
-            return res.status(422).json({error: 'invalid email or password'})
+            return res.status(422).json({error: 'Email sau parola incorecte'})
         }
         bcrypt.compare(parola, savedUser.parola)
         .then(doMatch => {
@@ -77,7 +77,7 @@ router.post('/signin', (req, res) => {
                 res.json({token, user: {_id, nume, email, ratingValue}})
             }
             else {
-                return res.status(422).json({error: 'invalid email or password'})
+                return res.status(422).json({error: 'Email sau parola incorecte'})
             }
         })
         .catch(err => {
@@ -95,7 +95,7 @@ router.post('/reset-password', (req, res) => {
         User.findOne({email: req.body.email})
         .then(user=>{
             if(!user){
-                return res.status(422).json({err: 'User doesnt exists with that email'})
+                return res.status(422).json({err: 'Nu exista un utilizator cu acest email'})
             }
             user.resetToken = token
             user.expireToken = Date.now() + 3600000

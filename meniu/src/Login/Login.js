@@ -53,7 +53,7 @@ const Login = () => {
                     <hr/>
                     <h2 style = {{fontFamily: 'Poppins'}}>Logheaza-te</h2>
 
-                    {(error != "") ? (<div className="alert alert-warning d-flex align-items-center" role="alert"><FiAlertTriangle style = {{width: '20px', height: '20px', marginRight: '10px', marginTop: '-2px'}}></FiAlertTriangle> {error}</div>) : ""}
+                    {(error != "") ? (<div style style = {{maxWidth: '300px'}} className="alert alert-warning d-flex align-items-center" role="alert"><FiAlertTriangle style = {{width: '20px', height: '20px', marginRight: '10px', marginTop: '-2px'}}></FiAlertTriangle> {error}</div>) : ""}
 
                     <div className="form-group">
                         <label htmlFor="email" style = {{fontFamily: 'Poppins'}}>Email: </label>

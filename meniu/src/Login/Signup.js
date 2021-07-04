@@ -33,7 +33,7 @@ const Signup = () => {
             }
             else {
                 setError(data.message);
-                history.push('/')
+                history.push('confirmare')
             }
         }).catch(err=> {
             console.log(err);
@@ -48,7 +48,7 @@ const Signup = () => {
                     <hr/>
                     <h2 style = {{fontFamily: 'Poppins'}}>Inregistare</h2>
                     
-                    {(error != "") ? (<div class="alert alert-warning d-flex align-items-center" role="alert"><FiAlertTriangle style = {{width: '20px', height: '20px', marginRight: '10px', marginTop: '-2px'}}></FiAlertTriangle> {error}</div>) : ""}
+                    {(error != "") ? (<div style = {{maxWidth: '300px'}} class="alert alert-warning d-flex align-items-center" role="alert"><FiAlertTriangle style = {{width: '20px', height: '20px', marginRight: '10px', marginTop: '-2px'}}></FiAlertTriangle> {error}</div>) : ""}
 
                     <div className="form-group">
                         <label style = {{fontFamily: 'Poppins'}} htmlFor="name">Nume: </label>

@@ -2,6 +2,7 @@ import React from 'react'
 import background from "../images/fundal.jpg"
 import { Link, useHistory } from 'react-router-dom'
 import { useState } from 'react'
+import { FiAlertTriangle } from "react-icons/fi"
 import LogoCinematrix from "../images/CinematrixLogo.png"
 
 const Reset = () => {
@@ -41,7 +42,7 @@ const Reset = () => {
                 <div className="form-inner">
                     <img style = {{width: '300px', height: '70px', marginBottom: '10px'}} src = {LogoCinematrix} alt="" />
                     <hr/>
-                    {(error != "") ? (<div className="error">{error}</div>) : ""}
+                    {(error != "") ? (<div style = {{maxWidth: '300px'}} class="alert alert-warning d-flex align-items-center" role="alert"><FiAlertTriangle style = {{width: '20px', height: '20px', marginRight: '10px', marginTop: '-2px'}}></FiAlertTriangle> {error}</div>) : ""}
                     <div className="form-group">
                         <label htmlFor="email">Email: </label>
                         <input style = {{border: '1px solid rgb(175, 175, 175)', boxShadow: '0px 4px 7px rgba(0,0,0,.2)'}} type="text" value = {email} onChange = {(e) => setEmail(e.target.value)}/>

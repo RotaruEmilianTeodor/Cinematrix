@@ -27,6 +27,7 @@ import ActoriSeriale from './Navbar + componente/ActoriSeriale';
 import ModalActors from './Componente mici (Film + Serial)/ModalActors';
 import Profil2 from './Navbar + componente/Profil2';
 import ProfilMare from './Navbar + componente/ProfilMare';
+import MesajConfrmareInregistrare from './Componente mici (Film + Serial)/MesajConfrmareInregistrare';
 
 const App2 = ({ }) => {
     return (
@@ -35,6 +36,7 @@ const App2 = ({ }) => {
             <Route exact path = '/inregistrare' component = {Signup}></Route>
             <Route exact path = '/profil' component = {Profil}></Route>
             <Route exact path = '/profil-2' component = {Profil2}></Route>
+            <Route exact path = '/confirmare' component = {MesajConfrmareInregistrare}></Route>
             <Route exact path = '/profil-mare' component = {ProfilMare}></Route>
             <Route exact path = '/reset' component = {Reset}></Route>
             <Route exact path = '/reset/:token' component = {NewPassword}></Route>
