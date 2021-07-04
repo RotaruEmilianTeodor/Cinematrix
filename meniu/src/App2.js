@@ -28,6 +28,7 @@ import ModalActors from './Componente mici (Film + Serial)/ModalActors';
 import Profil2 from './Navbar + componente/Profil2';
 import ProfilMare from './Navbar + componente/ProfilMare';
 import MesajConfrmareInregistrare from './Componente mici (Film + Serial)/MesajConfrmareInregistrare';
+import About from './Navbar + componente/About';
 
 const App2 = ({ }) => {
     return (
@@ -58,6 +59,7 @@ const App2 = ({ }) => {
             <Route exact path = '/actori-modal' component = {ModalActors}></Route>
             <Route exact path = '/contact' component = {Contact}></Route>
             <Route exact path = '/ajutor' component = {Ajutor}></Route>
+            <Route exact path = '/about' component = {About}></Route>
         </div>
     )
 }

@@ -53,7 +53,7 @@ const Home = () => {
 
             <div style = {{paddingBottom: '10px', marginTop: '-30px'}} className = 'homeContainer'>
                 <div className="news">
-                    <span>News Feed</span>
+                    <span>Ceva nou?!</span>
                     <ul>
                     <li><a href="https://www.filmnow.ro/stiri/primul-trailer-pentru-west-side-story-al-lui-steven-spielberg-unul-dintre-cele-mai-asteptate-filme-ale-anului-58386" target='_blank'>PRIMUL TRAILER PENTRU „WEST SIDE STORY”...</a></li>
                     <li><a href="https://www.filmnow.ro/stiri/momentele-surprinzatoare-si-controversele-care-au-marcat-gala-premiilor-oscar-2021-58363" target='_blank'>GALA PREMIILOR OSCAR 2021</a></li>

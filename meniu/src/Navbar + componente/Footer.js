@@ -33,7 +33,7 @@ const Footer = () => {
                 <a href="https://www.cinemagia.ro/" target='_blank' style = {{marginLeft: 30}}>Cinemagia</a>
             </div>
 
-            <p style = {{marginTop: '-5px'}}><Link to = 'profil-mare'>Pagina de utilizator</Link>&nbsp;&nbsp;<Link onClick = {DeleteFromLocalStorage} to = '/'>LOGOUT</Link></p>
+            <p style = {{marginTop: '-5px'}}><Link to = 'profil-mare'>Pagina de utilizator</Link>&nbsp;&nbsp;&nbsp;<Link to = 'about'>About</Link>&nbsp;&nbsp;&nbsp;<Link onClick = {DeleteFromLocalStorage} to = '/'>LOGOUT</Link></p>
             
             <div style = {{backgroundColor: '#373b69', paddingTop: 20, paddingBottom: 20}}>
                 <img style = {{width: '150px', height: '30px', marginTop: '-3px'}} src = {LogoCinematrix} alt="" /> © 2021 by Rotaru Emilian-Teodor. <b>All rights reserved</b> <a href="https://www.termsfeed.com/blog/sample-copyright-notices/" target = "_blank"><IoHandRightSharp style = {{marginTop: '-4px', color: 'black'}}></IoHandRightSharp></a>

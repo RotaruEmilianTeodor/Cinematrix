@@ -2094,3 +2094,16 @@ input[type = 'radio'] {
 .ReactModal__Overlay--before-close{
   opacity: 0;
 }
+
+.aboutIcons {
+  color: white;
+}
+
+.aboutIcons:hover {
+  color: #0275d8;
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
+}
