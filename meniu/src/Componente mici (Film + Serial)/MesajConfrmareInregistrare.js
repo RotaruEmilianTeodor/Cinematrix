@@ -10,7 +10,7 @@ const MesajConfrmareInregistrare = () => {
             <div className = 'formLogin'>
                 <div className="form-inner">
                     <img style = {{width: '300px', height: '70px', marginBottom: '10px'}} src = {LogoCinematrix} alt="" />
-                    <h6 style = {{fontFamily: 'Poppins', textAlign: 'center'}}>Inregistrare realizata cu succes! <AiFillCheckCircle style = {{width: '20px', height: '20px', marginTop: '-1px'}}></AiFillCheckCircle></h6>
+                    <h6 style = {{fontFamily: 'Poppins', textAlign: 'center', color: 'black'}}>Inregistrare realizata cu succes! <AiFillCheckCircle style = {{width: '20px', height: '20px', marginTop: '-1px'}}></AiFillCheckCircle></h6>
                     <hr />
                     <div style = {{marginTop: '-8px'}} className = 'about-section-3'>
                     <p style = {{fontFamily: 'Poppins', fontSize: '13px'}}>Esti doar la un click distanta de a beneficia</p>
