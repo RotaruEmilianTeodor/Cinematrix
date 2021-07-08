@@ -1826,6 +1826,13 @@ input[type = 'radio'] {
   border-radius: 8px;
 }
 
+.about-section-login {
+  padding: 50px;
+  text-align: center;
+  background-color: #22254b;
+  color: white;
+}
+
 /* Moduri diferite de utilizatori text */
 .articleUtilizator {
   background: linear-gradient(
