@@ -27,21 +27,10 @@ const StarRating = () => {
             res => res.json()
         ).then(
             result => console.log(result)
+        ).then(
+            localStorage.setItem('NewRatingValue', newRatingValue)
         )
     }
-
-    // useEffect(() => {
-    //     fetch('/updateRatingValue', {
-    //         headers: {
-    //             "Authorization": "Bearer " + localStorage.getItem("jwt")
-    //         }
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             PostData(data.ratingValue)
-    //         })
-    //         .catch(err => console.log(err))
-    // }, [])
 
     return (
         <div>
@@ -50,11 +39,11 @@ const StarRating = () => {
                 return (
                 // <label>
                 //     <input type="radio" name="rating" value = {ratingValue} onClick = {() => setRating(ratingValue)}/>
-                //     <FaRegStar className = 'star' color = {ratingValue <= (hover || rating) ? 'ffc107' : 'white'} size ={30} onMouseEnter = {() => setHover(ratingValue)} onMouseLeave = {() => setHover(null)}></FaRegStar>
+                //     <FaRegStar className = 'star' color = {ratingValue <= (hover || rating) ? 'ffc107' : 'white'} size ={30} onMouseEnter = {() => setHover(ratingValue)} onMouseLeave = {() => setHover(null)}}></FaRegStar>
                 // </label>
                 <label>
                 <input type="radio" name="rating" value = {ratingValue} onClick = {() => PostData(ratingValue)}/>
-                <FaRegStar className = 'star' color = {ratingValue <= (hover || userJSONParsed.ratingValue) ? 'ffc107' : 'white'} size ={30} onMouseEnter = {() => setHover(ratingValue)} onMouseLeave = {PostData.ratingValue}></FaRegStar>
+                <FaRegStar className = 'star' color = {ratingValue <= (hover || userJSONParsed.ratingValue) ? 'ffc107' : 'white'} size ={30} onMouseEnter = {() => setHover(ratingValue)} onMouseLeave = {() => setHover(localStorage.getItem('NewRatingValue'))}></FaRegStar>
                 </label> 
                 )
             })}

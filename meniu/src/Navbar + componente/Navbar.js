@@ -22,6 +22,7 @@ const Navbar = () => {
     const DeleteFromLocalStorage = () => {
         localStorage.removeItem('jwt')
         localStorage.removeItem('user')
+        localStorage.removeItem('NewRatingValue')
     }
 
     return (
