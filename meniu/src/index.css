@@ -6,31 +6,19 @@
 }
 
 @media screen and (max-width: 1535px) {
-  .quotes {
-      display: none !important;
-  }
-}
-
-@media screen and (max-width: 1535px) {
-  .socialButtonBarHidden {
-      display: none !important;
-  }
-}
-
-@media screen and (max-width: 1535px) {
-  .divLogout {
+  .quotes, .socialButtonBarHidden, .divLogout, .hartaGL, .formularContact {
       display: none !important;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .articleUtilizator {
+  .articleUtilizator, .motoSite {
       display: none !important;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .rulesIcon {
+  .rulesIcon, .separator {
       display: none !important;
   }
 }
@@ -41,26 +29,8 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .motoSite {
-      display: none !important;
-  }
-}
-
 @media screen and (max-width: 1250px) {
   .card__text {
-      display: none !important;
-  }
-}
-
-@media screen and (max-width: 1535px) {
-  .hartaGL {
-      display: none !important;
-  }
-}
-
-@media screen and (max-width: 1535px) {
-  .formularContact {
       display: none !important;
   }
 }
@@ -540,7 +510,7 @@ footer {
 }
 
 .reactPlayer1 {
-  margin-left: 70px;
+  margin-left: 22px;
 }
 
 .reactPlayer2 {
@@ -788,6 +758,7 @@ footer {
   position: relative;
   border: 0;
   display: block;
+  max-height: 297px;
 }
 
 .movie-card img {
@@ -937,6 +908,7 @@ input[type = 'radio'] {
 .imgModal {
   width: 100%;
   transition: 0.5s all ease-in-out;
+  height: 420px;
 }
 
 .imgModal:hover {

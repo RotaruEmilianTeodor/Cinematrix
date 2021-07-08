@@ -143,7 +143,7 @@ const Contact = () => {
 
                 </div>
 
-                <div style = {{border: '1px solid white', marginLeft: '200px', marginRight: '183px', backgroundColor: '#373b69', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}}>
+                <div style = {{border: '1px solid white', marginLeft: '200px', marginRight: '200px', backgroundColor: '#373b69', boxShadow: '0px 4px 7px rgba(0,0,0,.5)'}}>
                     <p style = {{color: 'white', fontFamily: 'Poppins', marginTop: '10px'}}><GoMail style = {{width: '25px', height: '25px', color: 'white', marginTop: '-2px'}}></GoMail> Daca doriti sa ne contactati in mod direct, o puteti face la una din adresele noastre de mail: <a href = "mailto:cinematrix.info.contact@gmail.com">cinematrix.info.contact@gmail.com</a></p>
                     <p style = {{color: 'white', fontFamily: 'Poppins', marginLeft: '678px'}}> sau <a href = "mailto:rotaruemilian18@stud.ase.ro">rotaruemilian18@stud.ase.ro</a></p>
                     <p style = {{color: 'white', fontFamily: 'Poppins'}}>O sa va incercam sa va raspundem in mai putin de 24 de ore. Va multumim pentru intelegere!</p>

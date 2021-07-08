@@ -214,12 +214,12 @@ const Home = () => {
                 <p style = {{color: 'gray', fontFamily: 'Poppins'}}>Meniurile marcate cu <FcVip style = {{width: '23px', height: '23px', marginTop: '-3px'}}></FcVip> anunta utilizatorul ca trebuie sa fie logat pentru a benficia de functionalitatea respectiva</p>
             </div>
 
-            <div style = {{backgroundColor: '#22254b', marginBottom: '-40px', paddingTop: '20px', overflow: 'hidden'}}>
+            <div style = {{backgroundColor: '#22254b', marginBottom: '-40px', paddingTop: '20px', overflow: 'hidden', justifyContent: 'center'}}>
             <h5 style = {{marginLeft: '-1100px', fontFamily: "Poppins", color: 'white'}}>Productiile mele preferate</h5>
             <h4 style = {{transform: 'rotate(-90deg)', color: 'white', marginLeft: '-1350px', marginTop: '45px', overflowY: 'hidden'}}>FILME</h4>
             <h4 style = {{transform: 'rotate(-90deg)', color: 'white', marginLeft: '70px', marginTop: '-25px', overflowY: 'hidden'}}>SERIALE</h4>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <div style = {{marginTop: '1386px', marginLeft: '-330px', overflowY: 'hidden'}} className="wrapper">
+                <div style = {{marginTop: '1407px', marginLeft: '-330px', overflowY: 'hidden'}} className="wrapper">
                     <div className="card-new-2" style = {{cursor: 'auto'}}>
                         <img src = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg'></img>
                         <div className="descriptions">
@@ -238,7 +238,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style = {{marginTop: '1386px', marginLeft: '10px', overflowY: 'hidden'}} className="wrapper">
+                <div style = {{marginTop: '1407px', marginLeft: '10px', overflowY: 'hidden'}} className="wrapper">
                     <div className="card-new-2" style = {{cursor: 'auto'}}>
                         <img src = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kve20tXwUZpu4GUX8l6X7Z4jmL6.jpg'></img>
                         <div className="descriptions">
@@ -257,7 +257,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style = {{marginTop: '1386px', marginLeft: '380px', overflowY: 'hidden'}} className="wrapper">
+                <div style = {{marginTop: '1407px', marginLeft: '380px', overflowY: 'hidden'}} className="wrapper">
                     <div className="card-new-2" style = {{cursor: 'auto'}}>
                         <img src = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg'></img>
                         <div className="descriptions">
@@ -276,7 +276,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style = {{marginTop: '1386px', marginLeft: '545px'}} className="wrapper-special">
+                <div style = {{marginTop: '1407px', marginLeft: '545px'}} className="wrapper-special">
                     <div className="card-new-2" style = {{cursor: 'auto'}}>
                         <img src = 'https://www.themoviedb.org/t/p/original/d5pEXITX9nfxIDg46U678payY1p.jpg'></img>
                         <div className="descriptions">
@@ -357,7 +357,7 @@ const Home = () => {
                 <h5 style = {{marginLeft: '-950px', fontFamily: "Poppins", color: 'white'}}>Cateva clipuri pentru cunoscatori <span style = {{color: 'black'}} className="badge bg-danger">YouTube</span></h5>
             </div>
 
-            <div className = 'homeContainer'>
+            <div style = {{justifyContent: 'center'}} className = 'homeContainer'>
                 <ReactPlayer style = {{border: '1px solid white'}} className = 'reactPlayer1' controls = {true} width = {450} height = {300}
                     url="https://youtu.be/0GAj1tsUN5I"
                 ></ReactPlayer>
@@ -368,10 +368,10 @@ const Home = () => {
                     url="https://youtu.be/MUS_QuK75qE"
                 ></ReactPlayer>
             </div>
-            <div className = 'textVideo'>
-                <h5 style = {{marginLeft: 230}}>Top 5 Seriale</h5>
-                <h5 style = {{marginLeft: 280}}>Top 5 Thrillere Psihologice</h5>
-                <h5 style = {{marginLeft: 230}}>Top 10 Filme Animate</h5>
+            <div style = {{justifyContent: 'center'}} className = 'textVideo'>
+                <h5 style = {{marginLeft: 60}}>Top 5 Seriale</h5>
+                <h5 style = {{marginLeft: 290}}>Top 5 Thrillere Psihologice</h5>
+                <h5 style = {{marginLeft: 220}}>Top 10 Filme Animate</h5>
             </div>
 
             {localStorage.getItem('jwt') ? <div style = {{backgroundColor: '#22254b', marginBottom: '-10px', paddingTop: '20px'}}>
