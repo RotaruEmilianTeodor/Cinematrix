@@ -60,7 +60,7 @@ const Reset = () => {
                     </div>
                 </div>
             </div>
-            <div style = {{backgroundColor: '#22254b'}}>
+            <div className = 'aboutLogin' style = {{backgroundColor: '#22254b'}}>
                 <div style = {{marginTop: '-35px'}} class="about-section-login">
                     <div style = {{marginTop: '-46px'}}>
                         <Time></Time>

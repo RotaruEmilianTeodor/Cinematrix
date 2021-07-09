@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 1535px) {
-  .quotes, .socialButtonBarHidden, .divLogout, .hartaGL, .formularContact {
+  .quotes, .socialButtonBarHidden, .divLogout, .hartaGL, .formularContact, .aboutLogin {
       display: none !important;
   }
 }
