@@ -51,7 +51,7 @@ const Home = () => {
                 <Time></Time>
             </div>
 
-            <div style = {{paddingBottom: '10px', marginTop: '-30px'}} className = 'homeContainer'>
+            <div style = {{paddingBottom: '10px', marginTop: '-30px', justifyContent: 'center'}} className = 'homeContainer'>
                 <div className="news">
                     <span>Ceva nou?!</span>
                     <ul>
@@ -76,8 +76,8 @@ const Home = () => {
                 <h1 style = {{fontWeight: 'lighter'}}>Bine te-am gasit pe platforma CINEMATRIX! <ImEnter style = {{marginTop: '-4px'}}></ImEnter></h1>
             </div>
             
-            <div className = 'homeContainer'>
-                <div style = {{width: '830px', marginLeft: '70px', border: '2px solid white', borderRadius: '5px'}} id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+            <div style = {{justifyContent: 'center'}} className = 'homeContainer'>
+                <div style = {{width: '830px', marginLeft: '0px', border: '2px solid white', borderRadius: '5px'}} id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
                 <div className="carousel-inner" role="listbox">
                     <div className="carousel-item active">
                     <img style = {{height: '500px'}} className="d-block w-100" src = {HollywoodImg}
@@ -113,9 +113,7 @@ const Home = () => {
                     <span className="sr-only">Next</span>
                 </a>
                 </div>
-            </div>
-
-            <div className="card" style={{backgroundColor: '#373b69', float: 'right', width: '510px', height: '505px', marginTop: '-505px', marginRight: '65px', border: '1px solid black', color: 'white'}}>
+                <div className="card" style={{backgroundColor: '#373b69', float: 'right', width: '510px', height: '505px', marginTop: '0px', marginLeft: '30px', border: '1px solid black', color: 'white'}}>
                     <img className = 'NewsImgclassName' style = {{width: '380px', height: '250px', marginLeft: '65px', marginTop: '20px'}} className="card-img-top" src = {NewsImg} alt="Card image cap"></img>
                     <div style = {{marginTop: '-15px'}} className="card-body">
                         <h5 className="card-title">Noutati</h5>
@@ -125,6 +123,7 @@ const Home = () => {
                         <hr className = 'hrclassName'/>
                         <h6 style = {{marginTop: '-7px'}} className="text-muted"><a href="https://www.filmnow.ro/stiri/oscar-2021-lista-castigatorilor-58261" target='_blank'>Sursa</a></h6>
                     </div>
+                </div>
             </div>
 
             <div style = {{backgroundColor: '#22254b', paddingTop: '20px', color: 'white', marginLeft: '-245px'}}>

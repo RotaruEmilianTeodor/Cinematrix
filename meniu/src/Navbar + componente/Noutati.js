@@ -179,6 +179,7 @@ const Noutati = () => {
                 <h1 style = {{color: 'white', fontFamily: 'Poppins', fontSize: '35px', marginTop: '10px'}}>Actori celebri</h1> 
 
                 <div style = {{backgroundColor: '#22254b', marginTop: '-150px', marginBottom: '-120px'}} class="container-actors">
+                
                     <div style = {{boxShadow: '0px 4px 7px rgba(0,0,0,.9)'}} class="card-actors">
                         <img src="https://www.radiooltenia.ro/wp-content/uploads/2016/05/Morgan-Freeman.jpg" alt="Person" class="card__image"></img>
                         <p class="card__name">Morgan Freeman</p>
