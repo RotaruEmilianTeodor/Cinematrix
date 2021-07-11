@@ -172,7 +172,7 @@ const Home = () => {
                         <div className="card-body">
                             <h5 style = {{marginTop: '-10px'}} className="card-title">Pagina Recomandari <FcVip style = {{width: '23px', height: '23px', marginTop: '-3px', marginLeft: '-3px'}}></FcVip></h5>
                             <div style = {{marginLeft: '48px'}} className="btn-framed">
-                                <span className="noselect"><Link className = 'linkDisabled' to = '/recomandari'>Link</Link></span>
+                                <span style = {{fontFamily: 'Poppins'}} className="noselect"><Link className = 'linkDisabled' to = '/recomandari'>Link</Link></span>
                             </div>
                         </div>
                 </div>
@@ -184,7 +184,7 @@ const Home = () => {
                         <div className="card-body">
                             <h5 style = {{marginTop: '-10px'}} className="card-title">Lista Personalizata <FcVip style = {{width: '23px', height: '23px', marginTop: '-3px', marginLeft: '-3px'}}></FcVip></h5>
                             <div style = {{marginLeft: '48px'}} className="btn-framed">
-                                <span className="noselect"><Link className = 'linkDisabled' to = '/lista-personalizata'>Link</Link></span>
+                                <span style = {{fontFamily: 'Poppins'}} className="noselect"><Link className = 'linkDisabled' to = '/lista-personalizata'>Link</Link></span>
                             </div>
                         </div>
                 </div>
@@ -196,7 +196,7 @@ const Home = () => {
                         <div className="card-body">
                             <h5 style = {{marginTop: '-10px'}} className="card-title">Filme, seriale si actori</h5>
                             <div style = {{marginLeft: '48px'}} className="btn-framed">
-                                <span className="noselect"><Link className = 'linkDisabled' to = '/filme'>Link</Link></span>
+                                <span style = {{fontFamily: 'Poppins'}} className="noselect"><Link className = 'linkDisabled' to = '/filme'>Link</Link></span>
                             </div>
                         </div>
                 </div>

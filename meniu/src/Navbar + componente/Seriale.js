@@ -129,7 +129,7 @@ function Seriale() {
 
   const getFilmeTalkShow = () => {
     getSeriale(API_TALKSHOW);
-    obiectGen.innerText = "Seriale - talkshow";
+    obiectGen.innerText = "Seriale de tip Talk show";
   }
 
   const getFilmeRazboiSiPolitica = () => {

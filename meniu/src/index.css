@@ -35,6 +35,12 @@
   }
 }
 
+@media screen and (max-width: 1320px) {
+  .statistics-about {
+      display: none !important;
+  }
+}
+
 body {
   background-color: #22254b;
   color: white;
@@ -511,14 +517,17 @@ footer {
 
 .reactPlayer1 {
   margin-left: 22px;
+  border-radius: 3px;
 }
 
 .reactPlayer2 {
   margin-left: 20px;
+  border-radius: 3px;
 }
 
 .reactPlayer3 {
   margin-left: 20px;
+  border-radius: 3px;
 }
 
 .textVideo {
@@ -1242,6 +1251,7 @@ input[type = 'radio'] {
   text-align: center;
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
 }
 
 .our-team .picture {
@@ -1548,6 +1558,7 @@ input[type = 'radio'] {
   transition: all .5s cubic-bezier(.8,.5,.2,1.4);
   overflow: hidden;
   position: relative;
+  border-radius: 3px;
 }
 
 .card-new-2 img{
