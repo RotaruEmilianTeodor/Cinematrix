@@ -1,5 +1,6 @@
 import React from 'react'
 import background from "../images/fundal.jpg"
+import loginPhoto from "../images/LoginPhoto2.jpg"
 import { Link, useHistory } from 'react-router-dom'
 import { useState } from 'react'
 import { FiAlertTriangle } from "react-icons/fi"
@@ -118,11 +119,9 @@ const Signup = () => {
 
                 <h5 style = {{color: 'white', fontFamily: 'Poppins', paddingTop: '10px'}}>And still counting...</h5>
 
-                <br />
+                <h1 style = {{fontFamily: 'Zen Loop', color: 'white', marginLeft: '370px', marginRight: '370px', paddingTop: '5px', paddingBottom: '5px'}}>Asadar, ce mai astepti? Povestea incepe cu tine!</h1>
 
-                <h2 style = {{fontFamily: 'Poppins', color: 'white', border: '1px solid white', marginLeft: '370px', marginRight: '370px', paddingTop: '5px', paddingBottom: '5px', borderRadius: '5px', backgroundColor: '#0275d8'}}>Asadar, ce mai astepti? Povestea incepe cu tine!</h2>
-
-                <br />
+                <img style = {{width: '100%', height: 'auto'}} src = {loginPhoto} alt="" />
             </div>
             <ScrollToTop></ScrollToTop>
         </div>

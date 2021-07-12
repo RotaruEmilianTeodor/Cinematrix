@@ -69,11 +69,11 @@ const Home = () => {
 
             <div className="about-section-home">
                 {userJSONParsed ? 
-                    <h4 style = {{fontFamily: 'Poppins', fontWeight: 'lighter', color: 'greenyellow'}}>{curHr < 12 ? `Buna dimineata, ${userJSONParsed.nume}` : curHr < 18 ? `Buna ziua, ${userJSONParsed.nume}` : `Buna seara, ${userJSONParsed.nume}`}</h4>
+                    <h2 style = {{fontFamily: 'Zen Loop', fontWeight: 'lighter', color: 'greenyellow'}}>{curHr < 12 ? `Buna dimineata, ${userJSONParsed.nume}` : curHr < 18 ? `Buna ziua, ${userJSONParsed.nume}` : `Buna seara, ${userJSONParsed.nume}`}</h2>
                 : 
-                    <h4 style = {{fontFamily: 'Poppins', fontWeight: 'lighter', color: 'greenyellow'}}>{curHr < 12 ? 'Buna dimineata, trecatorule' : curHr < 18 ? 'Buna ziua, trecatorule' : 'Buna seara, trecatorule'}</h4>
+                    <h2 style = {{fontFamily: 'Zen Loop', fontWeight: 'lighter', color: 'greenyellow'}}>{curHr < 12 ? 'Buna dimineata, trecatorule' : curHr < 18 ? 'Buna ziua, trecatorule' : 'Buna seara, trecatorule'}</h2>
                 }
-                <h1 style = {{fontWeight: 'lighter'}}>Bine te-am gasit pe platforma CINEMATRIX! <ImEnter style = {{marginTop: '-4px'}}></ImEnter></h1>
+                <h1 style = {{fontWeight: 'lighter', marginTop: '-10px'}}>Bine te-am gasit pe platforma CINEMATRIX! <ImEnter style = {{marginTop: '-4px'}}></ImEnter></h1>
             </div>
             
             <div style = {{justifyContent: 'center'}} className = 'homeContainer'>
