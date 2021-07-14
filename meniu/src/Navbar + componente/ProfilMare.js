@@ -139,9 +139,9 @@ const ProfilMare = () => {
           </div>
           <div class="card mt-3">
            <p style = {{paddingTop: '20px', color: 'black'}}>Multumim pentru ca ai ales site-ul nostru!</p>
-           <p>Consideram important sa te instiintam ca vei fi restrictionat din cauza rolului tau, insa poti oricand sa devii membru.</p>
-           <p>Tot ce trebuie sa faci e sa te inregistrezi si te poti bucura din plin de portalul nostru. Doar apasa pe <Link style = {{border: '1px solid red', padding: '5px', borderRadius: '5px', color: 'black'}} to = '/inregistrare'>Inregistrare</Link></p>
-           <p>Daca te putem ajuta cu orice altceva, anunta-ne cu ajutorul paginii CONTACT. Enjoy! <RiEmotionHappyLine style = {{color: 'hsl(204 100% 59%)', width: '25px', height: '25px', marginTop: '-4px', marginLeft: '-1px', color: 'black'}}></RiEmotionHappyLine></p>
+           <p style = {{color: 'black'}}>Consideram important sa te instiintam ca vei fi restrictionat din cauza rolului tau, insa poti oricand sa devii membru.</p>
+           <p style = {{color: 'black'}}>Tot ce trebuie sa faci e sa te inregistrezi si te poti bucura din plin de portalul nostru. Doar apasa pe <Link style = {{border: '1px solid red', padding: '5px', borderRadius: '5px', color: 'black'}} to = '/inregistrare'>Inregistrare</Link></p>
+           <p style = {{color: 'black'}}>Daca te putem ajuta cu orice altceva, anunta-ne cu ajutorul paginii CONTACT. Enjoy! <RiEmotionHappyLine style = {{color: 'hsl(204 100% 59%)', width: '25px', height: '25px', marginTop: '-4px', marginLeft: '-1px', color: 'black'}}></RiEmotionHappyLine></p>
            <p style = {{marginLeft: '400px', color: 'black'}}>Echipa Cinematrix</p>
           </div>
         </div>
