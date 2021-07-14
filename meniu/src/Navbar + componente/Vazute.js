@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useEffect, useState } from 'react'
 import {GlobalContext} from '../context/GlobalState'
 import MovieCard from '../Componente mici (Film + Serial)/MovieCard'
 import Footer from './Footer'
@@ -9,7 +9,22 @@ import { VscUnverified } from "react-icons/vsc"
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
 
 const Vazute = () => {
-    const {watched} = useContext(GlobalContext)
+    const [watched, setWatched]=useState([])
+
+    const userJSON = localStorage.getItem('user')
+    const userJSONParsed = JSON.parse(userJSON)
+
+    useEffect(() => {
+        fetch("/getWatchList",{
+            headers:{
+                "Authorization":"Bearer " + localStorage.getItem("jwt")
+            }
+        })
+        .then(res => res.json())
+        .then(movies =>{
+            setWatched(movies.data.watched)
+        })
+    }, [])
 
     return (
         <div>
@@ -24,7 +39,7 @@ const Vazute = () => {
             <div className="movie-page">
                 <div className="container">
                     <div className="headerDeVazut">
-                        <h1 className = 'heading'>Filme vizionate</h1>
+                        <h1 className = 'heading'>Filme vizionate de utilizatorul <b style = {{color: 'greenyellow', fontWeight: 'lighter'}}>{userJSONParsed.nume}</b></h1>
 
                         <span className="count-pill">
                             {watched.length} {watched.length === 1 ? 'Film' : 'Filme'} 
@@ -34,7 +49,7 @@ const Vazute = () => {
                     {watched.length > 0 ? (
                         <div className="movie-grid">
                         {watched.map(movie => (
-                            <MovieCard movie = {movie} type = 'watched'></MovieCard>
+                            <MovieCard movie = {JSON.parse(movie)} type = 'watched'></MovieCard>
                         ))}
                         </div>
                     ) : (

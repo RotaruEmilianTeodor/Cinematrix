@@ -1,15 +1,30 @@
-import React, { useContext } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
 import SocialButtonsBar from '../Componente mici (Film + Serial)/SocialButtonsBar'
 import Navbar from '../Navbar + componente/Navbar'
 import { Link } from 'react-router-dom'
-import { GlobalContext } from '../context/GlobalState'
 import MovieCard from '../Componente mici (Film + Serial)/MovieCard'
 import { VscUnverified } from "react-icons/vsc"
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
 
 const DeVazut = () => {
-    const {watchList} = useContext(GlobalContext)
+    const [watchList, setWatchList]=useState([])
+
+    const userJSON = localStorage.getItem('user')
+    const userJSONParsed = JSON.parse(userJSON)
+
+    useEffect(() => {
+        fetch("/getWatchList",{
+            headers:{
+                "Authorization":"Bearer " + localStorage.getItem("jwt")
+            }
+        })
+        .then(res => res.json())
+        .then(movies =>{
+            console.log(JSON.parse(movies.data.watchList[0]))
+            setWatchList(movies.data.watchList)
+        })
+    }, [])
 
     return (
         <div>
@@ -24,7 +39,7 @@ const DeVazut = () => {
             <div className="movie-page">
                 <div className="container">
                     <div className="headerDeVazut">
-                        <h1 className = 'heading'>Lista mea de filme</h1>
+                        <h1 className = 'heading'>Filme de vazut pentru utilizatorul <b style = {{color: 'greenyellow', fontWeight: 'lighter'}}>{userJSONParsed.nume}</b></h1>
 
                         <span className="count-pill">
                             {watchList.length} {watchList.length === 1 ? 'Film' : 'Filme'} 
@@ -34,7 +49,7 @@ const DeVazut = () => {
                     {watchList.length > 0 ? (
                         <div className="movie-grid">
                         {watchList.map(movie => (
-                            <MovieCard movie = {movie} type = 'watchList'></MovieCard>
+                            <MovieCard movie = {JSON.parse(movie)} type = 'watchList'></MovieCard>
                         ))}
                         </div>
                     ) : (

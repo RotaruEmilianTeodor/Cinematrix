@@ -5,6 +5,7 @@ import App2 from './App2'
 import { GlobalProvider } from './context/GlobalState'
 
 function App() {
+
   return (
     <GlobalProvider>
     <div className="App">

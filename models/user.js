@@ -17,6 +17,12 @@ const userSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    watched: [{
+        type: String
+    }],
+    watchList:[{
+        type: String
+    }], 
     resetToken: String,
     expireToken: Date
 })

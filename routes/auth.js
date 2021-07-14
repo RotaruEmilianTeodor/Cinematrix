@@ -73,8 +73,8 @@ router.post('/signin', (req, res) => {
             if(doMatch){
                 // res.json({message: 'successfully signed in'})
                 const token = jwt.sign({_id:savedUser._id}, JWT_SECRET)
-                const {_id, nume, email, ratingValue} = savedUser
-                res.json({token, user: {_id, nume, email, ratingValue}})
+                const {_id, nume, email, ratingValue, watchList, watched} = savedUser
+                res.json({token, user: {_id, nume, email, ratingValue, watchList, watched}})
             }
             else {
                 return res.status(422).json({error: 'Email sau parola incorecte'})
@@ -147,3 +147,91 @@ router.put('/updateRatingValue', requireLogin, (req, res) => {
 })
 
 module.exports = router
+
+router.put('/add-watchList', requireLogin, (req, res) => {
+    console.log(JSON.stringify(req.body.movie))
+    User.findByIdAndUpdate(req.user._id, {$push: {watchList: JSON.stringify(req.body.movie)}}, { new: true },
+        (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            res.json(result)
+        })
+})
+
+router.put('/add-watched', requireLogin, (req, res) => {
+    //console.log(JSON.stringify(req.body.movie))
+    User.findByIdAndUpdate(req.user._id, {$push: {watched: JSON.stringify(req.body.movie)}}, { new: true },
+        (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            res.json(result)
+        })
+})
+
+router.get('/getWatchList',requireLogin,(req,res)=>{
+    User.findOne({ _id: req.user._id})
+        .select("_id watchList watched ")
+        .then(data => {
+            res.json({data})
+        })
+        .catch(err => console.log(err))
+})
+
+router.put('/deleteMovie',requireLogin,(req,res)=>{
+    User.findByIdAndUpdate(req.user._id, {$pull: {watchList: JSON.stringify(req.body.movie)}}, { new: true },
+        (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            res.json(result)
+        })
+})
+
+router.put('/deleteMovie2',requireLogin,(req,res)=>{
+    User.findByIdAndUpdate(req.user._id, {$pull: {watched: JSON.stringify(req.body.movie)}}, { new: true },
+        (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            res.json(result)
+        })
+})
+
+router.put('/fromWatchToWatched', requireLogin,(req,res) =>{
+    User.findByIdAndUpdate(req.user._id, {$pull: {watchList: JSON.stringify(req.body.movie)}}, { new: true },
+        (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            console.log(result)
+        })
+        .then(() =>{
+            User.findByIdAndUpdate(req.user._id, {$push: {watched: JSON.stringify(req.body.movie)}}, { new: true },
+            (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            res.json(result)
+        })
+        })
+})
+
+router.put('/fromWatchedToWatch',requireLogin,(req,res)=>{
+    User.findByIdAndUpdate(req.user._id, {$pull: {watched: JSON.stringify(req.body.movie)}}, { new: true },
+        (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+        })
+        .then(()=>{
+            User.findByIdAndUpdate(req.user._id, {$push: {watchList: JSON.stringify(req.body.movie)}}, { new: true },
+            (err, result) => {
+            if (err) {
+                return res.status(422).json({ error: err })
+            }
+            res.json(result)
+        })
+        })
+})
