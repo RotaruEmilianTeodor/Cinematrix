@@ -1,6 +1,5 @@
 import React from 'react'
 import background from "../images/fundal.jpg"
-import loginPhoto from "../images/LoginPhoto2.jpg"
 import { Link, useHistory } from 'react-router-dom'
 import { useState } from 'react'
 import { FiAlertTriangle } from "react-icons/fi"
@@ -12,6 +11,7 @@ import { RiMovie2Line } from "react-icons/ri"
 import { AiOutlineFunction } from "react-icons/ai"
 import Time from '../Componente mici (Film + Serial)/Time'
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
+import { IoHandRightSharp } from "react-icons/io5"
 
 const Signup = () => {
     const history = useHistory()
@@ -119,9 +119,12 @@ const Signup = () => {
 
                 <h5 style = {{color: 'white', fontFamily: 'Poppins', paddingTop: '10px'}}>And still counting...</h5>
 
-                <h1 style = {{fontFamily: 'Zen Loop', color: 'white', marginLeft: '370px', marginRight: '370px', paddingTop: '5px', paddingBottom: '5px'}}>Asadar, ce mai astepti? Povestea incepe cu tine!</h1>
+                <h1 style = {{fontFamily: 'Zen Loop', color: 'white', marginLeft: '370px', marginRight: '370px', paddingTop: '5px', paddingBottom: '5px', marginBottom: '1px'}}>Asadar, ce mai astepti? Povestea incepe cu tine!</h1>
 
-                <img style = {{width: '100%', height: 'auto'}} src = {loginPhoto} alt="" />
+                <div style = {{backgroundColor: '#373b69', paddingTop: 20, paddingBottom: 20, color: 'black'}}>
+                <img style = {{width: '150px', height: '30px', marginTop: '-3px'}} src = {LogoCinematrix} alt="" /> © 2021 by Rotaru Emilian-Teodor. <b>All rights reserved</b> <a href="https://www.termsfeed.com/blog/sample-copyright-notices/" target = "_blank"><IoHandRightSharp style = {{marginTop: '-4px', color: 'black'}}></IoHandRightSharp></a>
+                </div>
+
             </div>
             <ScrollToTop></ScrollToTop>
         </div>
