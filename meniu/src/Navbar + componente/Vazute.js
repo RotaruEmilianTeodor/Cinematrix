@@ -46,6 +46,8 @@ const Vazute = () => {
                         </span>
                     </div>
 
+                    <hr style = {{border: '1px solid black', color: 'black', marginTop: '-8px', marginBottom: '20px'}}/>
+
                     {watched.length > 0 ? (
                         <div className="movie-grid">
                         {watched.map(movie => (

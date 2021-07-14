@@ -46,6 +46,8 @@ const DeVazut = () => {
                         </span>
                     </div>
 
+                    <hr style = {{border: '1px solid black', color: 'black', marginTop: '-8px', marginBottom: '20px'}}/>
+
                     {watchList.length > 0 ? (
                         <div className="movie-grid">
                         {watchList.map(movie => (
