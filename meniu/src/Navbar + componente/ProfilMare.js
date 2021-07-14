@@ -51,7 +51,7 @@ const ProfilMare = () => {
               <div class="d-flex flex-column align-items-center text-center">
                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150"></img>
                 <div class="mt-3">
-                  <h4>{userJSONParsed.nume}</h4>
+                  <h4 style = {{color: 'black'}}>{userJSONParsed.nume}</h4>
                   <p class="text-secondary mb-1">Membru CINEMATRIX</p>
                   <button className = "btn btn-info"><Link style = {{color: 'black'}} to = '/contact'>CONTACT</Link></button>&nbsp;
                   <button className = "btn btn-warning"><Link style = {{color: 'black'}} to = '/ajutor'>AJUTOR</Link></button>&nbsp;
@@ -64,10 +64,10 @@ const ProfilMare = () => {
           <div style = {{float: 'right'}} class="col-md-8">
           <div class="card mb-3">
             <div class="card-body">
-            <h5 style = {{marginTop: '-10px', marginBottom: '20px', marginRight: '600px', textDecoration: 'underline'}}>Profil</h5>
+            <h5 style = {{marginTop: '-10px', marginBottom: '20px', marginRight: '600px', textDecoration: 'underline', color: 'black'}}>Profil</h5>
               <div class="row">
                 <div class="col-sm-3">
-                  <h6 class="mb-0">Numele complet:</h6>
+                  <h6 style = {{color: 'black'}} class="mb-0">Numele complet:</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">
                   {userJSONParsed.nume}
@@ -77,7 +77,7 @@ const ProfilMare = () => {
               <hr></hr>
               <div style = {{marginBottom: '9px'}} class="row">
                 <div class="col-sm-3">
-                  <h6 class="mb-0">Email:</h6>
+                  <h6 style = {{color: 'black'}} class="mb-0">Email:</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">
                   {userJSONParsed.email}
@@ -86,7 +86,7 @@ const ProfilMare = () => {
               <hr></hr>
               <div style = {{marginBottom: '8px'}} class="row">
                 <div class="col-sm-3">
-                  <h6 class="mb-0">Id unic:</h6>
+                  <h6 style = {{color: 'black'}} class="mb-0">Id unic:</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">
                   {userJSONParsed._id}
@@ -95,7 +95,7 @@ const ProfilMare = () => {
               <hr></hr>
               <div style = {{marginBottom: '20px'}} class="row">
                 <div class="col-sm-3">
-                  <h6 class="mb-0">Stare:</h6>
+                  <h6 style = {{color: 'black'}} class="mb-0">Stare:</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">
                   Membru
@@ -104,11 +104,11 @@ const ProfilMare = () => {
             </div>
           </div>
           <div class="card mt-3">
-            <p style = {{paddingTop: '20px'}}>Multumim pentru ca ai ales site-ul nostru!</p>
-            <p>Daca ti-ai pierdut parola sau vrei sa o schimbi, apasa pe <Link style = {{border: '1px solid red', padding: '5px', borderRadius: '5px'}} to = '/reset'>Resetare parola</Link> </p>
-            <p>Daca te putem ajuta cu orice altceva, anunta-ne cu ajutorul paginii CONTACT.</p>
-            <p>Enjoy! <RiEmotionHappyLine style = {{color: 'hsl(204 100% 59%)', width: '25px', height: '25px', marginTop: '-4px', marginLeft: '-3px'}}></RiEmotionHappyLine></p>
-            <p style = {{marginLeft: '400px'}}>Echipa Cinematrix</p>
+            <p style = {{paddingTop: '20px', color: 'black'}}>Multumim pentru ca ai ales site-ul nostru!</p>
+            <p style = {{color: 'black'}}>Daca ti-ai pierdut parola sau vrei sa o schimbi, apasa pe <Link style = {{border: '1px solid red', padding: '5px', borderRadius: '5px'}} to = '/reset'>Resetare parola</Link> </p>
+            <p style = {{color: 'black'}}>Daca te putem ajuta cu orice altceva, anunta-ne cu ajutorul paginii CONTACT.</p>
+            <p style = {{color: 'black'}}>Enjoy! <RiEmotionHappyLine style = {{color: 'hsl(204 100% 59%)', width: '25px', height: '25px', marginTop: '-4px', marginLeft: '-3px'}}></RiEmotionHappyLine></p>
+            <p style = {{marginLeft: '400px', color: 'black'}}>Echipa Cinematrix</p>
           </div>
         </div>
           </div>
@@ -127,7 +127,7 @@ const ProfilMare = () => {
               <div class="d-flex flex-column align-items-center text-center">
                 <img src = {Cartoon} alt="Admin" class="rounded-circle" width="150"></img>
                 <div class="mt-3">
-                  <h4>Anonim</h4>
+                  <h4 style = {{color: 'black'}}>Anonim</h4>
                   <p class="text-secondary mb-1">Trecator CINEMATRIX</p>
                   <button className = "btn btn-info"><Link style = {{color: 'black'}} to = '/contact'>CONTACT</Link></button>&nbsp;
                   <button className = "btn btn-warning"><Link style = {{color: 'black'}} to = '/ajutor'>AJUTOR</Link></button>&nbsp;
@@ -138,11 +138,11 @@ const ProfilMare = () => {
           </div>
           </div>
           <div class="card mt-3">
-           <p style = {{paddingTop: '20px'}}>Multumim pentru ca ai ales site-ul nostru!</p>
+           <p style = {{paddingTop: '20px', color: 'black'}}>Multumim pentru ca ai ales site-ul nostru!</p>
            <p>Consideram important sa te instiintam ca vei fi restrictionat din cauza rolului tau, insa poti oricand sa devii membru.</p>
-           <p>Tot ce trebuie sa faci e sa te inregistrezi si te poti bucura din plin de portalul nostru. Doar apasa pe <Link style = {{border: '1px solid red', padding: '5px', borderRadius: '5px'}} to = '/inregistrare'>Inregistrare</Link></p>
-           <p>Daca te putem ajuta cu orice altceva, anunta-ne cu ajutorul paginii CONTACT. Enjoy! <RiEmotionHappyLine style = {{color: 'hsl(204 100% 59%)', width: '25px', height: '25px', marginTop: '-4px', marginLeft: '-1px'}}></RiEmotionHappyLine></p>
-           <p style = {{marginLeft: '400px'}}>Echipa Cinematrix</p>
+           <p>Tot ce trebuie sa faci e sa te inregistrezi si te poti bucura din plin de portalul nostru. Doar apasa pe <Link style = {{border: '1px solid red', padding: '5px', borderRadius: '5px', color: 'black'}} to = '/inregistrare'>Inregistrare</Link></p>
+           <p>Daca te putem ajuta cu orice altceva, anunta-ne cu ajutorul paginii CONTACT. Enjoy! <RiEmotionHappyLine style = {{color: 'hsl(204 100% 59%)', width: '25px', height: '25px', marginTop: '-4px', marginLeft: '-1px', color: 'black'}}></RiEmotionHappyLine></p>
+           <p style = {{marginLeft: '400px', color: 'black'}}>Echipa Cinematrix</p>
           </div>
         </div>
           </div>
