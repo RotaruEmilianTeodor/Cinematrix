@@ -126,7 +126,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div style = {{backgroundColor: '#22254b', paddingTop: '20px', color: 'white', marginLeft: '-245px'}}>
+            <div className = 'administratorCard' style = {{backgroundColor: '#22254b', paddingTop: '20px', color: 'white', marginLeft: '-245px'}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -149,21 +149,23 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            
+            <div className = 'iconiteHome'>
+                <div style = {{float: 'right', marginTop: '-300px', marginRight: '1060px'}}>
+                    <BsNewspaper className = 'BsNews'></BsNewspaper>
+                </div>
 
-            <div style = {{float: 'right', marginTop: '-300px', marginRight: '1060px'}}>
-                <BsNewspaper className = 'BsNews'></BsNewspaper>
-            </div>
+                <div style = {{float: 'right', marginTop: '-200px', marginRight: '1060px'}}>
+                    <BsTv className = 'BsNews'></BsTv>
+                </div>
 
-            <div style = {{float: 'right', marginTop: '-200px', marginRight: '1060px'}}>
-                <BsTv className = 'BsNews'></BsTv>
-            </div>
+                <div style = {{float: 'right', marginTop: '-100px', marginRight: '1060px'}}>
+                    <BsCameraVideo className = 'BsNews'></BsCameraVideo>
+                </div>
 
-            <div style = {{float: 'right', marginTop: '-100px', marginRight: '1060px'}}>
-                <BsCameraVideo className = 'BsNews'></BsCameraVideo>
-            </div>
-
-            <div style = {{float: 'right', marginTop: '-340px', marginRight: '430px'}}>
-                <h6 style = {{color: 'white', fontFamily: "Poppins"}}>Ce va ofera portalul nostru? <span className="badge bg-secondary">New</span></h6>
+                <div className = 'ceVaOfera' style = {{float: 'right', marginTop: '-340px', marginRight: '430px'}}>
+                    <h6 style = {{color: 'white', fontFamily: "Poppins"}}>Ce va ofera portalul nostru? <span className="badge bg-secondary">New</span></h6>
+                </div>
             </div>
 
             <div style = {{float: 'right', marginTop: '-310px', marginRight: '710px',}}>
@@ -213,8 +215,8 @@ const Home = () => {
                 <p style = {{color: 'gray', fontFamily: 'Poppins'}}>Meniurile marcate cu <FcVip style = {{width: '23px', height: '23px', marginTop: '-3px'}}></FcVip> anunta utilizatorul ca trebuie sa fie logat pentru a benficia de functionalitatea respectiva</p>
             </div>
 
-            <div style = {{backgroundColor: '#22254b', marginBottom: '-40px', paddingTop: '20px', overflow: 'hidden', justifyContent: 'center'}}>
-            <h5 style = {{marginLeft: '-1100px', fontFamily: "Poppins", color: 'white'}}>Productiile mele preferate</h5>
+            <div className = 'productiiPreferate' style = {{backgroundColor: '#22254b', marginBottom: '-40px', paddingTop: '20px', overflow: 'hidden', justifyContent: 'center'}}>
+            <h5 style = {{marginLeft: '-950px', fontFamily: "Poppins", color: 'white'}}>Productiile preferate ale adminsitratorului</h5>
             <h4 style = {{transform: 'rotate(-90deg)', color: 'white', marginLeft: '-1350px', marginTop: '45px', overflowY: 'hidden'}}>FILME</h4>
             <h4 style = {{transform: 'rotate(-90deg)', color: 'white', marginLeft: '70px', marginTop: '-25px', overflowY: 'hidden'}}>SERIALE</h4>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -296,7 +298,7 @@ const Home = () => {
 
             </div>
 
-            <div style = {{paddingLeft: '105px', paddingRight: '65px', backgroundColor: '#22254b'}} class="accordion accordion-flush" id="accordionFlushExample">
+            <div className = 'intrebariFrecvente' style = {{paddingLeft: '105px', paddingRight: '65px', backgroundColor: '#22254b'}} class="accordion accordion-flush" id="accordionFlushExample">
             <h5 style = {{color: 'white', marginBottom: '10px'}}><RiQuestionnaireLine style = {{width: '25px', height: '25px'}}></RiQuestionnaireLine> Intrebari frecvente</h5>
             <p style = {{color: 'white', paddingLeft: '10px', paddingRight: '10px'}}>Deoarece consideram important ca utlizatorii nostri sa aiba intotdeauna acces la cele mai bune metode de a folosi platforma Cienematrix, am cules 5 dintre cele mai frecvent aparute intrebari de la dumneavoastra si le-am oferit raspunsuri pe masura. Nu uitati ca daca exista si altele, paginile noastre CONTACT si AJUTOR va stau la dispozitie.</p>
             <div class="accordion-item">
@@ -352,7 +354,7 @@ const Home = () => {
             
             </div>
 
-            <div style = {{backgroundColor: '#22254b', marginBottom: '-10px', paddingTop: '20px'}}>
+            <div className = 'cunoscatoriText' style = {{backgroundColor: '#22254b', marginBottom: '-10px', paddingTop: '20px'}}>
                 <h5 style = {{marginLeft: '-950px', fontFamily: "Poppins", color: 'white'}}>Cateva clipuri pentru cunoscatori <span style = {{color: 'black'}} className="badge bg-danger">YouTube</span></h5>
             </div>
 

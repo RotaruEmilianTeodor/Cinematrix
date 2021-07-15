@@ -176,7 +176,7 @@ const Noutati = () => {
 
                 </div>
 
-                <h1 style = {{color: 'white', fontFamily: 'Poppins', fontSize: '35px', marginTop: '10px'}}>Actori celebri</h1> 
+                <h1 className = 'actoriCelebriText' style = {{color: 'white', fontFamily: 'Poppins', fontSize: '35px', marginTop: '10px'}}>Actori celebri</h1> 
 
                 <div style = {{backgroundColor: '#22254b', marginTop: '-150px', marginBottom: '-120px'}} class="container-actors">
                 
@@ -252,11 +252,11 @@ const Noutati = () => {
                 </div>
 
 
-                <div style = {{backgroundColor: '#22254b', marginBottom: '-20px', marginLeft: '-780px', color: 'gray', fontFamily: "Poppins", paddingTop: '10px'}}>
-                    <p style = {{marginLeft: '-350px'}}><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> INFO:</p>
-                    <p style = {{marginTop: '-10px', marginLeft: '-41px', marginBottom: '21px'}}>Fiecare cardbox de pe pagina este <i>clickable</i></p>
-                    <p style = {{marginTop: '-10px', marginLeft: '250px'}}>Stirile de pe pagina provin din surse variate (Film Now, Cinemagia, UpFit, Impact)</p>
-                    <p style = {{marginTop: '-10px', marginLeft: '-60px'}}>Trailerele de pe pagina provin de pe <ImYoutube2 style = {{width: '40px', height: '40px', marginTop: '-1px'}}></ImYoutube2></p>
+                <div style = {{paddingBottom: '10px'}} className = "about-section-2">
+                    <p style = {{fontFamily: 'Poppins'}}><TiInfoLargeOutline style = {{width: '30px', height: '30px', marginTop: '-3px', marginRight: '-5px'}}></TiInfoLargeOutline> INFO:</p>
+                    <p style = {{fontFamily: 'Poppins'}}>Fiecare cardbox de pe pagina este <i>clickable</i></p>
+                    <p style = {{fontFamily: 'Poppins'}}>Stirile de pe pagina provin din surse variate (Film Now, Cinemagia, UpFit, Impact)</p>
+                    <p style = {{fontFamily: 'Poppins'}}>Trailerele de pe pagina provin de pe <ImYoutube2 style = {{width: '40px', height: '40px', marginTop: '-1px'}}></ImYoutube2></p>
                 </div>
 
                 <ScrollToTop></ScrollToTop>
