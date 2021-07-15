@@ -1,4 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
+import { FaInfoCircle } from 'react-icons/fa'
 
 const MovieControls = ({ movie, type }) => {
 
@@ -82,9 +83,15 @@ const MovieControls = ({ movie, type }) => {
         <div className="inner-card-controls">
             {type === 'watchList' && (
                 <>
+                    <button className="ctrl-btn">
+                        <a className = 'aboutListe' href = {`https://www.themoviedb.org/movie/${movie.id}`} target='_blank' data-toggle="tooltip" data-placement="top" title="Mai multe info"><FaInfoCircle></FaInfoCircle></a>
+                    </button>
+                    <br />
+
                     <button className="ctrl-btn" onClick = {() => fromWatchToWatched(movie)}>
                         <i>Vazut</i>
                     </button>
+
                     <button className="ctrl-btn" onClick = {() => removeMovieFromWatchList(movie)}>
                         <i>Sterge</i>
                     </button>
@@ -93,6 +100,11 @@ const MovieControls = ({ movie, type }) => {
 
             {type === 'watched' && (
                 <>
+                    <button className="ctrl-btn">
+                        <a className = 'aboutListe' href = {`https://www.themoviedb.org/movie/${movie.id}`} target='_blank' data-toggle="tooltip" data-placement="top" title="Mai multe info"><FaInfoCircle></FaInfoCircle></a>
+                    </button>
+                    <br />
+
                     <button className="ctrl-btn" onClick ={() => fromWatchedToWatch(movie)}>
                         <i>Nevizionat</i>
                     </button>

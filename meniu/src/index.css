@@ -2111,6 +2111,19 @@ input[type = 'radio'] {
   transition:         color 0.5s;
 }
 
+.aboutListe {
+  color: white;
+}
+
+.aboutListe:hover {
+  color: gray;
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
+}
+
 /* Profil */
 .main-body {
   padding: 15px;
@@ -2140,3 +2153,4 @@ input[type = 'radio'] {
 .shadow-none {
   box-shadow: none!important;
 }
+
