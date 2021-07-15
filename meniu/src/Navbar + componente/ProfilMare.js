@@ -64,7 +64,7 @@ const ProfilMare = () => {
           <div style = {{float: 'right'}} class="col-md-8">
           <div class="card mb-3">
             <div class="card-body">
-            <h5 style = {{marginTop: '-10px', marginBottom: '20px', marginRight: '600px', textDecoration: 'underline', color: 'black'}}>Profil</h5>
+            <h5 style = {{marginTop: '-10px', marginBottom: '25px', marginRight: '600px', textDecoration: 'underline', color: 'black'}}>Profil</h5>
               <div class="row">
                 <div class="col-sm-3">
                   <h6 style = {{color: 'black'}} class="mb-0">Numele complet:</h6>
@@ -74,7 +74,7 @@ const ProfilMare = () => {
                 </div>
               </div>
               </div>
-              <hr></hr>
+              <hr style = {{border: '1px solid gray', marginTop: '5px'}}></hr>
               <div style = {{marginBottom: '9px'}} class="row">
                 <div class="col-sm-3">
                   <h6 style = {{color: 'black'}} class="mb-0">Email:</h6>
@@ -83,7 +83,7 @@ const ProfilMare = () => {
                   {userJSONParsed.email}
                 </div>
               </div>
-              <hr></hr>
+              <hr style = {{border: '1px solid gray'}}></hr>
               <div style = {{marginBottom: '8px'}} class="row">
                 <div class="col-sm-3">
                   <h6 style = {{color: 'black'}} class="mb-0">Id unic:</h6>
@@ -92,8 +92,8 @@ const ProfilMare = () => {
                   {userJSONParsed._id}
                 </div>
               </div>
-              <hr></hr>
-              <div style = {{marginBottom: '20px'}} class="row">
+              <hr style = {{border: '1px solid gray'}}></hr>
+              <div style = {{marginBottom: '22px'}} class="row">
                 <div class="col-sm-3">
                   <h6 style = {{color: 'black'}} class="mb-0">Stare:</h6>
                 </div>
