@@ -46,7 +46,7 @@ const Ajutor = () => {
             <h6 className = 'quotes' data-bs-toggle="tooltip" data-bs-placement="top" title="Robert Kiyosaki" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"One of the biggest defects in life is the inability to ask for help" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>
             </header>
 
-            <div style = {{paddingLeft: '170px', backgroundColor: '#22254b', paddingTop: '50px'}}>
+            <div style = {{backgroundColor: '#22254b', paddingTop: '50px', display: 'block', paddingLeft: '160px'}}>
                 <div class="card-group" style = {{width: '1200px', backgroundColor: '#22254b'}}>
                     <div class="card">
                         <div className = 'ImgDiv'>
