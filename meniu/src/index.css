@@ -13,7 +13,7 @@
 }
 
 @media screen and (min-width: 1535px) {
-  .bodyProfilMare {
+  .about-section-home-profil {
       display: none !important;
   }
 }
@@ -1831,6 +1831,13 @@ input[type = 'radio'] {
 
 .about-section-home {
   padding: 15px;
+  text-align: center;
+  background-color: #373b69;
+  color: white;
+}
+
+.about-section-home-profil {
+  padding: 22px;
   text-align: center;
   background-color: #373b69;
   color: white;
