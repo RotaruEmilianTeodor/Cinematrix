@@ -2,7 +2,6 @@ import React from 'react'
 import background from "../images/fundal.jpg"
 import { Link, useHistory, useParams } from 'react-router-dom'
 import { useState } from 'react'
-import Signup from './Signup'
 
 const Login = () => {
     const history = useHistory()

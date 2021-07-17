@@ -40,7 +40,6 @@ const Ajutor = () => {
     return (
         <div>
             <Navbar></Navbar>
-            {/* One of the biggest defects in life is the inability to ask for help. */}
             <header style = {{marginTop: 70, height: 76}}>
             <h3 className = 'textRecomandari' style = {{marginLeft: 55}}>Ajutor</h3>
             <h6 className = 'quotes' data-bs-toggle="tooltip" data-bs-placement="top" title="Robert Kiyosaki" style = {{float: 'left', marginLeft: 30, marginTop: 15, color: '#0275d8', fontStyle: 'oblique'}}>"One of the biggest defects in life is the inability to ask for help" <BsChatQuote style = {{width: '25px', height: '25px', marginTop: '-5px', marginLeft: '8px'}}></BsChatQuote></h6>

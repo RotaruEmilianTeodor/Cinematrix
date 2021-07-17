@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react"
-import Film from "../Componente mici (Film + Serial)/Film";
-import { Route, Link, BrowserRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import SocialButtonsBar from '../Componente mici (Film + Serial)/SocialButtonsBar'
 import Footer from './Footer'
-import FilmRecomandari from "../Componente mici (Film + Serial)/FilmRecomandari"
 import SerialRecomandari from "../Componente mici (Film + Serial)/SerialRecomandari"
 import { VscUnverified } from "react-icons/vsc"
 import { TiInfoLargeOutline } from "react-icons/ti"

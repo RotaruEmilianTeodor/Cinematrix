@@ -71,7 +71,6 @@ router.post('/signin', (req, res) => {
         bcrypt.compare(parola, savedUser.parola)
         .then(doMatch => {
             if(doMatch){
-                // res.json({message: 'successfully signed in'})
                 const token = jwt.sign({_id:savedUser._id}, JWT_SECRET)
                 const {_id, nume, email, ratingValue, watchList, watched} = savedUser
                 res.json({token, user: {_id, nume, email, ratingValue, watchList, watched}})
@@ -160,7 +159,6 @@ router.put('/add-watchList', requireLogin, (req, res) => {
 })
 
 router.put('/add-watched', requireLogin, (req, res) => {
-    //console.log(JSON.stringify(req.body.movie))
     User.findByIdAndUpdate(req.user._id, {$push: {watched: JSON.stringify(req.body.movie)}}, { new: true },
         (err, result) => {
             if (err) {

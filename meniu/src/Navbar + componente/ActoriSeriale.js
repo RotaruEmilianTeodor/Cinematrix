@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react"
-import { Route, Link, BrowserRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import SocialButtonsBar from '../Componente mici (Film + Serial)/SocialButtonsBar'
 import Footer from './Footer'
 import { VscUnverified } from "react-icons/vsc"
 import { TiInfoLargeOutline } from "react-icons/ti"
 import { AiOutlineAlert } from "react-icons/ai"
-import ActorFilme from "../Componente mici (Film + Serial)/ActorFilme";
 import ActorSerial from "../Componente mici (Film + Serial)/ActorSerial"
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/tv?sort_by=popularity.desc&api_key=2d7f5ba449370c217df98de84358761d&page=1";

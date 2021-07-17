@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import Serial from "../Componente mici (Film + Serial)/Serial";
-import { Route, Link, BrowserRouter } from 'react-router-dom'
 import Navbar from './Navbar'
 import SocialButtonsBar from '../Componente mici (Film + Serial)/SocialButtonsBar'
 import Footer from "./Footer"
@@ -11,7 +10,6 @@ import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
 
 const FEATURED_API_TV = "https://api.themoviedb.org/3/discover/tv?sort_by=popularity.desc&api_key=2d7f5ba449370c217df98de84358761d&page=1";
 
-// API pe genuri
 const API_ACTIUNEsiAVENTURA = "https://api.themoviedb.org/3/discover/tv?api_key=2d7f5ba449370c217df98de84358761d&with_genres=10759";
 const API_ANIMATIE = "https://api.themoviedb.org/3/discover/tv?api_key=2d7f5ba449370c217df98de84358761d&with_genres=16";
 const API_COMEDIE = "https://api.themoviedb.org/3/discover/tv?api_key=2d7f5ba449370c217df98de84358761d&with_genres=35";
@@ -248,5 +246,3 @@ function Seriale() {
 }
 
 export default Seriale;
-
-// SURSA: https://www.youtube.com/watch?v=sZ0bZGfg_m4&t=1757s

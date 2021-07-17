@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import {GlobalContext} from '../context/GlobalState'
 import MovieCard from '../Componente mici (Film + Serial)/MovieCard'
 import Footer from './Footer'
 import SocialButtonsBar from '../Componente mici (Film + Serial)/SocialButtonsBar'

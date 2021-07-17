@@ -108,11 +108,7 @@ const Film = ({ title, poster_path, overview, vote_average, release_date, origin
                 <p className={`tag-nou ${setVoteClass(vote_average)}`} style = {{fontSize: '35px', position: 'absolute', marginTop: '-10px', marginLeft: '-5px', bottom: -10}}><FaAward></FaAward> {vote_average} /</p>
                 <a style = {{float: 'right', marginTop: '-20px', marginRight: '10px'}} href = {`https://www.themoviedb.org/movie/${id}`} target='_blank'><SiThemoviedatabase className = 'FaFilm'></SiThemoviedatabase></a>
                 <button style = {{marginTop: '-475px', marginLeft: '780px', float: 'left'}} onClick = {() => setmodalIsOpen(false)}><FaRegWindowClose className = 'FaClose'></FaRegWindowClose></button>
-                {/* <div className = 'videosYT'>
-                    {(
-                        videos
-                    ) ? <a href={`https://www.youtube.com/watch?v=${videos.key}`} target='_blank'><ImYoutube2 className = 'YoutubeIcon' style = {{position: 'absolute', left: '5px', bottom: '-50px', width: '60px', height: '60px', paddingTop: '12px'}}></ImYoutube2></a> : "Nu exista videoclip"}
-                </div> */}
+                
                 <div className = 'videosYT'>
                     {(
                         videos 

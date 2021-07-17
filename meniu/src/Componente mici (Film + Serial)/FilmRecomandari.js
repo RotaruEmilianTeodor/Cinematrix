@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { FaThumbsUp } from 'react-icons/fa'
 import { RiMovieLine } from 'react-icons/ri'
 import Modal from 'react-modal'
 import ModalSimilarMovies from './ModalSimilarMovies'

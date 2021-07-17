@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Route, Link, BrowserRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import SocialButtonsBar from '../Componente mici (Film + Serial)/SocialButtonsBar'
 import Footer from './Footer'

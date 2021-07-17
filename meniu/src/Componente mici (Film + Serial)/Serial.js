@@ -109,11 +109,7 @@ const Serial = ({ name, poster_path, overview, vote_average, first_air_date, ori
                 <p className={`tag-nou ${setVoteClass(vote_average)}`} style = {{fontSize: '35px', position: 'absolute', marginTop: '-10px', marginLeft: '-5px', bottom: -10}}><FaAward></FaAward> {vote_average} /</p>
                 <a style = {{float: 'right', marginTop: '-20px', marginRight: '10px'}} href = {`https://www.themoviedb.org/tv/${id}`} target='_blank'><SiThemoviedatabase className = 'FaFilm'></SiThemoviedatabase></a>
                 <button style = {{marginTop: '-475px', marginLeft: '780px', float: 'left'}} onClick = {() => setmodalIsOpen(false)}><FaRegWindowClose className = 'FaClose'></FaRegWindowClose></button>
-                {/* <div className = 'videosYT'>
-                    {(
-                        videos2
-                    ) ? <a href={`https://www.youtube.com/watch?v=${videos2.key}`} target='_blank'><ImYoutube2 className = 'YoutubeIcon' style = {{position: 'absolute', left: '5px', bottom: '-50px', width: '60px', height: '60px', paddingTop: '12px'}}></ImYoutube2></a> : "loading"}
-                </div> */}
+                
                 <div className = 'videosYT'>
                     {(
                         videos2

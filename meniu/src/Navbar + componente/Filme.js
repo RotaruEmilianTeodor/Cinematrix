@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import Film from "../Componente mici (Film + Serial)/Film";
-import { Route, Link, BrowserRouter } from 'react-router-dom'
 import Navbar from './Navbar'
 import SocialButtonsBar from '../Componente mici (Film + Serial)/SocialButtonsBar'
 import Footer from './Footer'
@@ -11,7 +10,6 @@ import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=2d7f5ba449370c217df98de84358761d&page=1";
 
-// API pe genuri
 const API_ACTIUNE = "https://api.themoviedb.org/3/discover/movie?api_key=2d7f5ba449370c217df98de84358761d&with_genres=28";
 const API_AVENTURA = "https://api.themoviedb.org/3/discover/movie?api_key=2d7f5ba449370c217df98de84358761d&with_genres=12";
 const API_ANIMATIE = "https://api.themoviedb.org/3/discover/movie?api_key=2d7f5ba449370c217df98de84358761d&with_genres=16";
@@ -156,7 +154,6 @@ function Filme() {
   }
 
   return (
-    // folosim fragment, sau putem pune <div>
     <>
       <Navbar></Navbar>
       <header style = {{marginTop: 70}}>
@@ -270,5 +267,3 @@ function Filme() {
 }
 
 export default Filme;
-
-// SURSA: https://www.youtube.com/watch?v=sZ0bZGfg_m4&t=1757s
