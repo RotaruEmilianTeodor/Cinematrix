@@ -99,8 +99,8 @@ const Serial = ({ name, poster_path, overview, vote_average, first_air_date, ori
                 <p style = {{marginLeft: '320px', fontFamily: 'poppins', marginTop: '-10px'}}><FaCalendarAlt className = 'FaCalendar'></FaCalendarAlt> Data de lansare: {first_air_date}</p>
                 {(
                     actors 
-                ) ? <p style = {{fontFamily: 'Poppins', color: 'black', marginTop: '-5px'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <RiUserStarLine style = {{width: '25px', height: '25px'}}></RiUserStarLine> Din distributie face parte: <b>{actors.name}</b></p> : 'Nu avem actori'}
-                <Link style = {{marginLeft: '40px', fontSize: '13px', boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} to = '/recomandari-seriale' type="button" class="btn btn-danger">Recomandari seriale</Link>
+                ) ? <p style = {{fontFamily: 'Poppins', color: 'black', marginTop: '-5px'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <RiUserStarLine style = {{width: '25px', height: '25px'}}></RiUserStarLine> Din distributie face parte: <b>{actors.name}</b></p> : <p style = {{fontFamily: 'Poppins', color: 'black', marginTop: '-5px'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <RiUserStarLine style = {{width: '25px', height: '25px'}}></RiUserStarLine>Nu avem actori</p>}
+                <Link style = {{marginLeft: '40px', fontSize: '13px', boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} to = {localStorage.getItem('user') ? '/recomandari-seriale' : '/recomandari'} type="button" class="btn btn-danger">Recomandari seriale</Link>
                 <Link style = {{marginLeft: '10px', fontSize: '13px', boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} to = '/lista-personalizata' type="button" class="btn btn-warning">Lista personalizata</Link>
                 <Link style = {{marginLeft: '10px', fontSize: '13px', boxShadow: '0px 4px 7px rgba(0,0,0,.6)'}} to = '/actori-seriale' type="button" class="btn btn-success">Actori</Link>
                 <div style = {{position: 'absolute', bottom: '0', marginLeft: '120px', marginBottom: '2px', float: 'left'}}>
