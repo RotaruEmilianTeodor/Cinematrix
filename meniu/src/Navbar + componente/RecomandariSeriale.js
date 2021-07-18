@@ -20,7 +20,6 @@ function RecomandariSeriale() {
 
   const userJSON = localStorage.getItem('user')
   const userJSONParsed = JSON.parse(userJSON)
-  console.log(userJSONParsed.nume)
 
   var obiectGen = document.getElementById('textNode')
   

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import MovieCard from '../Componente mici (Film + Serial)/MovieCard'
 import { VscUnverified } from "react-icons/vsc"
 import ScrollToTop from '../Componente mici (Film + Serial)/ScrollToTop'
+import { GiStopSign } from "react-icons/gi"
 
 const DeVazut = () => {
     const [watchList, setWatchList]=useState([])
@@ -26,6 +27,7 @@ const DeVazut = () => {
         })
     }, [])
 
+    if (localStorage.getItem('jwt')) {
     return (
         <div>
             <Navbar></Navbar>
@@ -68,6 +70,39 @@ const DeVazut = () => {
             <SocialButtonsBar></SocialButtonsBar>
         </div>
     )
+    } else {
+        return (
+            <>
+            <Navbar></Navbar>
+            <header style = {{marginTop: 70, height: 76}}>
+                <h3 className = 'textRecomandari' style = {{marginLeft: 55}}>Lista Personalizata</h3>
+            </header>
+            
+            <div className="movie-page">
+                <GiStopSign style = {{width: '150px', height: '150px', color: 'red'}}></GiStopSign>
+                <h2 style = {{color: 'white', fontFamily: 'Poppins', marginTop: '20px', marginBottom: '20px'}}>Acces restrictionat <b>trecatorilor!</b></h2>
+                <p style = {{color: 'white', fontFamily: 'Poppins'}}>Din pacate aceasta pagina nu este inclusa in pachetul de beneficii pe care il detii.</p>
+                <p style = {{color: 'white', fontFamily: 'Poppins'}}>Pentru a te putea bucura de pagina Lista Personalizata, va trebui sa intri in modul <b>Membru</b>. Pentru a putea face acest lucru te rugam urmeaza instructiunile de mai jos:</p>
+                <p style = {{color: 'white', fontFamily: 'Poppins', fontWeight: 'lighter'}}>- Apasa pe butonul LOGOUT din partea dreapta de sus a paginii.</p>
+                <p style = {{color: 'white', fontFamily: 'Poppins', fontWeight: 'lighter', marginTop: '-15px'}}>- Daca ai deja cont, introdu datele, si apasa pe butonul LOGIN.</p>
+                <p style = {{color: 'white', fontFamily: 'Poppins', fontWeight: 'lighter', marginTop: '-15px'}}>- Daca nu ai cont, apasa butonul INREGISTRARE, si completeaza formularul, apoi logheaza-te cu noile date.</p>
+                <p style = {{color: 'white', fontFamily: 'Poppins', fontWeight: 'lighter', marginTop: '-15px'}}>ACUM TE POTI BUCURA DE ACEASTA PAGINA!</p>
+                <p style = {{color: 'white', fontFamily: 'Poppins', marginLeft: '500px', marginBottom: '-10px'}}>Echipa CINEMATRIX</p>
+            </div>
+
+            <div className="about-section-2" style = {{paddingBottom: '2px', paddingTop: '20px'}}>
+                <h6 style = {{color: 'white', fontFamily: 'Poppins', marginTop: '-2px'}}><b>NU UITA!</b></h6>
+                <p style = {{color: 'gray', fontFamily: 'Poppins'}}>Pentru informatiile cu privire la functionalitatile paginii acesteaza meniul <Link to = '/ajutor'><button style = {{marginLeft: '5px', marginRight: '5px'}} type="button" class="btn btn-outline-warning">Ajutor</button></Link></p>
+                <p style = {{color: 'gray', fontFamily: 'Poppins'}}>Pentru informatiile generale cu privire la portal acesteaza meniul <Link to = '/contact'><button style = {{marginLeft: '5px', marginRight: '5px'}} type="button" class="btn btn-outline-danger">Contact</button></Link></p>
+            </div>
+
+            <ScrollToTop></ScrollToTop>
+
+            <Footer></Footer>
+            <SocialButtonsBar></SocialButtonsBar>
+            </>
+        )
+    }
 }
 
 export default DeVazut
